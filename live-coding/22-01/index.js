@@ -12,10 +12,13 @@ const sum1 = function(x, y) {
 const sum = (x, y) => {
   return x + y;
 };
-sum(5, 4);
+
+console.log(sum(5, 4));
+console.log(sum1(3, 2));
+
 const names = ["Ali", "Olga", "Nancy", "Hadi"];
-const newArr = names.map((name, index) => name[0] == "O");
-console.log(newArr);
+// const newArr = names.map((name, index) => name[0] == "O");
+// console.log(newArr);
 
 // Array.map(value,index=>{}) // creates a new array
 names.forEach((name, index) => console.log(name + " index num =" + index));
