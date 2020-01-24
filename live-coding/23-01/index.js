@@ -18,7 +18,7 @@ function sum(x, y) {
   let z = x + y;
   return z;
 }
-// console.log(z); tis is out side of the function
+// console.log(z); this is out side of the function
 console.log(sum(2, 3));
 sum(10, 3);
 // local vs global
@@ -79,7 +79,7 @@ const names = ["Ali", "Olga", "Nancy"];
 // Array.includes()
 console.log(names.includes("Ali")); //true
 // Array.indexOf(<item>)
-console.log(names.indexOf("Ali"));
+console.log(names.indexOf("Ali")); // string
 
 // Removing items:
 // Array.pop()  // Removing  the lastItem
