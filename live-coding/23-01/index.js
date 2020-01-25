@@ -240,5 +240,5 @@ function pigLatin(str) {
   let result = translation.join(" ");
   return result;
 }
-const strPig = "higo that is fun";
+const strPig = "Cats are great pets";
 console.log(pigLatin(strPig));
