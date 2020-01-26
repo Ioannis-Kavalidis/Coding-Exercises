@@ -14,7 +14,7 @@ const sum = (x, y) => {
 };
 
 console.log(sum(5, 4));
-console.log(sum1(3, 2));
+// console.log(sum1(3, 2));
 
 const names = ["Ali", "Olga", "Nancy", "Hadi"];
 // const newArr = names.map((name, index) => name[0] == "O");

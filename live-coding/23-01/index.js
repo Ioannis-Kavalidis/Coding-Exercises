@@ -18,7 +18,7 @@ function sum(x, y) {
   let z = x + y;
   return z;
 }
-// console.log(z); this is out side of the function
+// console.log(z); this is outside of the function
 console.log(sum(2, 3));
 sum(10, 3);
 // local vs global
@@ -31,6 +31,7 @@ function fun() {
 }
 
 console.log(fun());
+
 let string = "This is a long text";
 console.log(string[0]);
 console.log(string.substring(0, 4));
