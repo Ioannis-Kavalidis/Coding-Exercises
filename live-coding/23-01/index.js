@@ -190,8 +190,8 @@ toCamelCase("javascript_is_fun") ➞ "javaScriptIsFun"
 */
 
 const toCamelCase = str => {
-  let splitStr = str.split("_");
   let camelArray = [];
+  let splitStr = str.split("_");
   for (let i = 0; i < splitStr.length; i++) {
     let firstChr, restStr;
     if (splitStr[i] == splitStr[0]) {
@@ -210,7 +210,7 @@ const toCamelCase = str => {
 };
 
 console.log(toCamelCase("snack_log_hi"));
-console.log(toCamelCase("snack_sck"));
+console.log(toCamelCase("avascript_is_fun"));
 
 /* 
 Pig Latin Translation. Create a function that takes a string of words and moves the first letter of each word to the end of it, then adds ‘ay’ to the end of the word. This is a basic form of “Pig Latin”.
