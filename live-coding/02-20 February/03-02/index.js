@@ -10,7 +10,7 @@ function main(num1, num2) {
 
 console.log(main(3, 4));
 
-// nested scopes: accessing outer global variables
+// nested scopes: accessing outer global variable
 var nice = true; // global variables
 const outerFunction = (x, y) => {
   let big = true;
