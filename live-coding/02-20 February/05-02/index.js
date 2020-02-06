@@ -171,8 +171,9 @@ console.log(fun2({ firstName: "Eli" }, { lastName: "Nelli" }));
 // } else {
 //   return zodiacName1[month];
 // }
+// console.log();
 
-// function getZodiac(day, month) {
+// function getZodiac(name,day, month, year) {
 //   let zodiacs = {
 //     aquarius: {
 //       start: [20, 1],
@@ -250,32 +251,30 @@ function zodiacName(name, day, month, year) {
   };
 
   let monthPlusDay = month + day;
-  console.log(monthPlusDay);
-
   let sign = () => {
-    if (monthPlusDay >= "120" && monthPlusDay <= "218") {
+    if (monthPlusDay >= "0120" && monthPlusDay <= "0218") {
       return `aquarius`;
-    } else if (monthPlusDay >= "219" && monthPlusDay <= "320") {
+    } else if (monthPlusDay >= "0219" && monthPlusDay <= "0320") {
       return `pishes`;
-    } else if (monthPlusDay >= "321" && monthPlusDay <= "4190") {
+    } else if (monthPlusDay >= "0321" && monthPlusDay <= "04190") {
       return `aries`;
-    } else if (monthPlusDay >= "420" && monthPlusDay <= "520") {
+    } else if (monthPlusDay >= "0420" && monthPlusDay <= "0520") {
       return `taurus`;
-    } else if (monthPlusDay >= "521" && monthPlusDay <= "620") {
+    } else if (monthPlusDay >= "0521" && monthPlusDay <= "0620") {
       return `gemini`;
-    } else if (monthPlusDay >= "621" && monthPlusDay <= "722") {
+    } else if (monthPlusDay >= "0621" && monthPlusDay <= "0722") {
       return `cancer`;
-    } else if (monthPlusDay >= "723" && monthPlusDay <= "822") {
+    } else if (monthPlusDay >= "0723" && monthPlusDay <= "0822") {
       return `leo`;
-    } else if (monthPlusDay >= "823" && monthPlusDay <= "922") {
+    } else if (monthPlusDay >= "0823" && monthPlusDay <= "0922") {
       return `virgo`;
-    } else if (monthPlusDay >= "923" && monthPlusDay <= "1022") {
+    } else if (monthPlusDay >= "0923" && monthPlusDay <= "01022") {
       return `libra`;
     } else if (monthPlusDay >= "1023" && monthPlusDay <= "1121") {
       return `scorpio`;
     } else if (monthPlusDay >= "1122" && monthPlusDay <= "1221") {
       return `sagittarius`;
-    } else if (monthPlusDay >= "1222" || monthPlusDay <= "119") {
+    } else if (monthPlusDay >= "1222" || monthPlusDay <= "0119") {
       return `capricorn`;
     } else {
       return `Not a valid date to assign a zodiac sign`;
@@ -283,5 +282,4 @@ function zodiacName(name, day, month, year) {
   };
   return zodiac.output();
 }
-
 console.log(zodiacName("Hadi", "05", "01", "1983"));
