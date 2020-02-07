@@ -147,78 +147,81 @@ function getZodiac(name, day, month, year) {
     month: month,
     year: year,
     output: function() {
-      return `${name} you are a ${signed}`;
+      return `${name} you are a ${signed()}`;
     }
   };
-  let zodiacs = {
-    1: {
-      sign: "capricorn",
-      start: "0000",
-      end: "0119"
-    },
-    2: {
-      sign: "aquarius",
-      start: "0120",
-      end: "0218"
-    },
-    3: {
-      sign: "pisces",
-      start: "0219",
-      end: "0320"
-    },
-    4: {
-      sign: "Aries",
-      start: "0321",
-      end: "0419"
-    },
-    5: {
-      sign: "taurus",
-      start: "0420",
-      end: "0520"
-    },
-    6: {
-      sign: "gemini",
-      start: "0521",
-      end: "0620"
-    },
-    7: {
-      sign: "cancer",
-      start: "0621",
-      end: "0722"
-    },
-    8: {
-      sign: "leo",
-      start: "0723",
-      end: "0822"
-    },
-    9: {
-      sign: "virgo",
-      start: "0823",
-      end: "0922"
-    },
-    10: {
-      sign: "libra",
-      start: "0923",
-      end: "1022"
-    },
-    11: {
-      sign: "scorpio",
-      start: "1023",
-      end: "1121"
-    },
-    12: {
-      sign: "sagittarius",
-      start: "1123",
-      end: "1221"
-    },
-    13: {
-      sign: "Capricorn",
-      start: "1222",
-      end: "1231"
+  let zodiacs = [
+    {
+      1: {
+        sign: "capricorn",
+        start: "0000",
+        end: "0119"
+      },
+      2: {
+        sign: "aquarius",
+        start: "0120",
+        end: "0218"
+      },
+      3: {
+        sign: "pisces",
+        start: "0219",
+        end: "0320"
+      },
+      4: {
+        sign: "Aries",
+        start: "0321",
+        end: "0419"
+      },
+      5: {
+        sign: "taurus",
+        start: "0420",
+        end: "0520"
+      },
+      6: {
+        sign: "gemini",
+        start: "0521",
+        end: "0620"
+      },
+      7: {
+        sign: "cancer",
+        start: "0621",
+        end: "0722"
+      },
+      8: {
+        sign: "leo",
+        start: "0723",
+        end: "0822"
+      },
+      9: {
+        sign: "virgo",
+        start: "0823",
+        end: "0922"
+      },
+      10: {
+        sign: "libra",
+        start: "0923",
+        end: "1022"
+      },
+      11: {
+        sign: "scorpio",
+        start: "1023",
+        end: "1121"
+      },
+      12: {
+        sign: "sagittarius",
+        start: "1123",
+        end: "1221"
+      },
+      13: {
+        sign: "Capricorn",
+        start: "1222",
+        end: "1231"
+      }
     }
-  };
+  ];
 
   let combinedMonthAndDay = month + day;
+  console.log(combinedMonthAndDay);
 
   let signed = () => {
     for (let prop in zodiacs) {
@@ -231,9 +234,10 @@ function getZodiac(name, day, month, year) {
         return "invalid date";
       }
     }
-    return signed;
+    console.log(signed());
   };
+
   return myZodiac.output();
 }
 
-console.log(getZodiac("John", "10", "11", "1983"));
+console.log(getZodiac("John", "24", "11", "1983"));
