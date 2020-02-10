@@ -152,48 +152,39 @@ function getZodiac(name, day, month, year) {
   };
   let zodiacs = [
     {
-      1: {
-        sign: "capricorn",
+      capricorn: {
         start: "0000",
         end: "0119"
       },
-      2: {
-        sign: "aquarius",
+      aquarius: {
         start: "0120",
         end: "0218"
       },
-      3: {
-        sign: "pisces",
+      pisces: {
         start: "0219",
         end: "0320"
       },
-      4: {
-        sign: "Aries",
+      Aries: {
         start: "0321",
         end: "0419"
       },
-      5: {
-        sign: "taurus",
+      taurus: {
         start: "0420",
         end: "0520"
       },
-      6: {
-        sign: "gemini",
+      gemini: {
         start: "0521",
         end: "0620"
       },
-      7: {
-        sign: "cancer",
+      cancer: {
         start: "0621",
         end: "0722"
       },
-      8: {
-        sign: "leo",
+      leo: {
         start: "0723",
         end: "0822"
       },
-      9: {
-        sign: "virgo",
+      virgo: {
         start: "0823",
         end: "0922"
       },
@@ -202,18 +193,15 @@ function getZodiac(name, day, month, year) {
         start: "0923",
         end: "1022"
       },
-      11: {
-        sign: "scorpio",
+      scorpio: {
         start: "1023",
         end: "1121"
       },
-      12: {
-        sign: "sagittarius",
+      sagittarius: {
         start: "1123",
         end: "1221"
       },
-      13: {
-        sign: "Capricorn",
+      capricorn: {
         start: "1222",
         end: "1231"
       }
@@ -221,15 +209,13 @@ function getZodiac(name, day, month, year) {
   ];
 
   let combinedMonthAndDay = month + day;
-  console.log(combinedMonthAndDay);
-
   let signed = () => {
     for (let prop in zodiacs) {
       if (
         combinedMonthAndDay >= zodiacs[prop].start &&
         combinedMonthAndDay <= zodiacs[prop].end
       ) {
-        return `${zodiacs[prop].sign}`;
+        return `${zodiacs[prop]}`;
       } else {
         return "invalid date";
       }
