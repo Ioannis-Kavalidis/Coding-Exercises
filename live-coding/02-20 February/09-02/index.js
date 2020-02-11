@@ -230,9 +230,7 @@ console.log("let");
 // then return "Learning the programming languages: "JavaScript, Python, Ruby, Go" is rewarding and challenging.
 // Bonus: In a comment, explain what is printed if we console.log an object method without calling it and why.
 
-// Bonus:
-
-// Make sure that any other code cannot delete or change properties of the object.(need Google)
+// Bonus: Make sure that any other code cannot delete or change properties of the object.(need Google)
 
 const programming = {
   languages: ["JavaScript", "Python", "Ruby"],
