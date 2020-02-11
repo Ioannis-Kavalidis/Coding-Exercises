@@ -116,6 +116,7 @@ function inside(num, obj) {
 }
 console.log(inside(6, { min: 0, max: 5 }));
 console.log(inside(4, objR));
+console.log("net");
 
 // 2. Scrabble. Write a program that, given an array of scrabble tiles, counts the maximum score that a player can earn from the tiles in their hand.
 //Example: [ { tile: "N", score: 1 }, { tile: "K", score: 5 }, { tile: "Z", score: 10 }, { tile: "X", score: 8 }, { tile: "D", score: 2 }, { tile: "A", score: 1 }, { tile: "E", score: 1 } ]
@@ -152,7 +153,7 @@ function score(word) {
 }
 
 console.log(score(arrScore));
-
+console.log("set");
 // 3. Is it an empty object? Write a program that returns true if an object is empty, and false if otherwise.
 
 // Examples:
@@ -176,7 +177,7 @@ function isEmpty(obj) {
 
 console.log(isEmpty({}));
 console.log(isEmpty({ a: 1 }));
-
+console.log("vet");
 // 4. Free Shipping. Create a function that determines whether an online order should get free shipping. An order gets free shipping if the total cost of items exceeds €50.
 
 // Examples:
@@ -200,7 +201,7 @@ console.log(freeShipping({ "Surround Sound Equipment": 499.99 }));
 console.log(
   freeShipping({ Wool: 13.99, "Knitting Needles": 15.5, Bag: 13.99 })
 );
-
+console.log("let");
 // 5. Programming Object.
 
 // const programming = {
@@ -241,18 +242,24 @@ const programming = {
   jokes:
     "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke"
 };
+console.log("set");
+
 programming.languages.push("Go");
 console.log(programming);
 
+console.log("ket");
 programming.difficulty = 7;
 console.log(programming);
 
+console.log("ret");
 delete programming.jokes;
 console.log(programming);
 
+console.log("vet");
 programming.isFun = true;
 console.log(programming);
 
+console.log("det");
 let array = programming.languages; // making a reference
 for (let i = 0; i < array.length; i++) {
   console.log(array[i]);
@@ -271,6 +278,7 @@ console.log("bet");
 for (let key in programming) {
   console.log(programming[key]);
 }
+console.log("wet");
 
 programming.is = () => {
   if (programming.isChallenging == true && programming.isRewarding == true) {
@@ -281,4 +289,22 @@ programming.is = () => {
 };
 console.log(programming.is());
 
+console.log("yet");
 Object.freeze(programming);
+
+const person1 = {
+  name: "John",
+  age: 27,
+  gender: "male",
+  print: function() {
+    console.log(`${this.name} is a ${this.age} year old in ${this.gender}.`);
+  }
+};
+
+for (let prop in person1) {
+  console.log(`${prop} : ${person1[prop]} `);
+}
+
+for (let [key, value] of Object.entries(person1)) {
+  console.log(`${key} : ${value} `);
+}
