@@ -114,3 +114,9 @@ console.log(firstName);
 // Extracting values from arrays: Array destructuring assignment
 
 // Extracting values from objects: Object destructuring assignment
+
+let pets1 = [
+  ["Chan", 7, "Pitbull"],
+  ["Son", 4, "Maddog"]
+];
+pets1.forEach(pet => pet.forEach(element => console.log(element)));
