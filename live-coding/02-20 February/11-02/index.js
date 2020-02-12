@@ -12,7 +12,7 @@ for (i = 0; i < arr.length; i++) {
     console.log(arr[i][j] + " array");
   }
 }
-console.log("mmmm");
+console.log("mmm");
 
 let arrayNew = [];
 
