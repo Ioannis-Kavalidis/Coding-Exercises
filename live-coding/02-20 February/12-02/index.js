@@ -213,3 +213,34 @@ console.log(names);
 
 // new Date()
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now
+
+let fruits = ["apple", "banana", "grapes", "mango", "orange"];
+
+/**
+ * Print out the items from an array which has 2 parameters and where the second parameter (a string) is inside the first one
+ * ex. let fruits = ["apple", "banana", "grapes", "mango", "orange"];
+ *  "an"-> ['banana', 'mango', 'orange']
+ */
+function filterItems(arr, query) {
+  return arr.filter(function(el) {
+    return el.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+  });
+}
+
+console.log(filterItems(fruits, "ap")); // ['apple', 'grapes']
+console.log(filterItems(fruits, "an")); // ['banana', 'mango', 'orange']
+
+const isPrime = value => {
+  let i = 2;
+  while (i < value) {
+    if (value % i === 0) {
+      return false;
+    }
+    i++;
+  }
+  return value > 1;
+};
+console.log(isPrime(2)); //true
+console.log(isPrime(7)); //true
+console.log(isPrime(9)); //false
+console.log(isPrime(10)); //false
