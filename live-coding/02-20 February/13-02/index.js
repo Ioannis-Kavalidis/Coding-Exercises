@@ -2,23 +2,23 @@
 
 // `try { ... }  /  catch (err) { ... }`  / throw ""  /  finally{}
 
-// let userName = "";
-// try {
-//   console.log("Hi his is trying phase");
-//   //cool();
-//   if (userName == "") throw " Sorry something went wrong ";
-// } catch (err) {
-//   console.log("this error is " + err);
-// } finally {
-//   console.log("This will always run");
-// }
+let userName = "";
+try {
+  console.log("Hi his is trying phase");
+  //cool();
+  if (userName == "") throw " Sorry something went wrong ";
+} catch (err) {
+  console.log("this error is " + err);
+} finally {
+  console.log("This will always run");
+}
 
 // how to call multiple times the same function
 function display() {
   // 1st solution
   console.log("Hi this is fun!");
 }
-for (let i = 0; i < 8; i++) {
+for (let i = 0; i < 3; i++) {
   display();
 }
 
@@ -26,7 +26,7 @@ for (let i = 0; i < 8; i++) {
   // 2nd solution
   display();
   if (num > 1) manyTimeCallFunction(num - 1);
-})(8);
+})(3);
 
 // print out after some seconds
 // const timerPrint = setTimeout(() => console.log("Hi I am JS"), 5000);
@@ -89,6 +89,16 @@ function getMonthName(month) {
 console.log(getMonthName(12));
 console.log(getMonthName(13));
 
+try {
+  const getMonthName1 = numOfMonth => {
+    if (numOfMonth <= 12 && numOfMonth >= 1) {
+      console.log(numOfMonth);
+    } else throw "Invalid month number";
+  };
+  getMonthName1(13);
+} catch (error) {
+  console.log(error);
+}
 // 3. Exercise: Reverse
 // Create a function that reverses a string. Throw a custom error if the user inputs another type as an argument.
 // Example
@@ -106,3 +116,40 @@ function reverseString(str) {
 }
 console.log(reverseString("hello"));
 console.log(reverseString(2019));
+
+const reverseString1 = str => {
+  try {
+    let reverseArray = "";
+    if (typeof str !== "string") throw "Error! This is not a string";
+    else {
+      reverseArray = str
+        .split("")
+        .reverse()
+        .join("");
+      console.log(reverseArray);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+[1, 2, 3, 4].map(() => reverseString1("knird a evah s'tel"));
+
+// <omths exercise from older
+
+const checkMonths = txt => {
+  let months = [
+    ["Spring", "march", "april", "may"],
+    ["Summer", "june", "july", "august"],
+    ["Autumn", "september", "october", "november"],
+    ["Winter", "december", "january", "february"]
+  ];
+  let strToArr = txt.toLowerCase().split(" ");
+  for (let i = 0; i < months.length; i++) {
+    for (let j = 0; j < months[i].length; j++) {
+      if (months[i][j].includes(strToArr)) {
+        return months[i][j] + " is in " + months[i][0];
+      }
+    }
+  }
+};
+console.log(checkMonths("december"));
