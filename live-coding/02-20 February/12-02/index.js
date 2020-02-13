@@ -5,6 +5,8 @@ function fun(num, { name }) {
   console.log(firstName);
 }
 fun(22, { name: "Ali" });
+
+fun(22, { name: "Ali" });
 const userData = {
   firstName: "Hadi",
   lastName: "Nsreeny",
@@ -75,6 +77,7 @@ casper.display();
 let sofi = new Animals("Fish", "Berlin");
 let mary = new Animals("Cat", "Tokyo");
 console.log(sofi);
+
 class Color {
   // create a template for an object
   constructor() {
@@ -163,6 +166,8 @@ let samsung = new Tv("Panasonic", 34, 48);
 samsung.increase();
 samsung.increase();
 
+console.log("Hiii");
+
 class Person2 {
   constructor(_name, _age) {
     this.name = _name;
@@ -180,7 +185,7 @@ class Kid extends Person2 {
     this.height = _height;
   }
   show() {
-    return `${this.name} is ${this.age} years old...............`;
+    return `${this.name} is ${this.age} years old..............`;
   }
 }
 let kain = new Kid("kain", 12);
