@@ -51,7 +51,7 @@ class Dog {
     this.name = _name;
   }
   bark() {
-    console.log(`${this.name} says woof`);
+    console.log(`${this.name} says woof!!!`);
   }
 }
 let fido = new Dog("fido");
