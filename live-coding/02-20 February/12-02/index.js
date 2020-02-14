@@ -185,7 +185,7 @@ class Kid extends Person2 {
     this.height = _height;
   }
   show() {
-    return `${this.name} is ${this.age} years old..............`;
+    return `${this.name} is ${this.age} years old........`;
   }
 }
 let kain = new Kid("kain", 12);
