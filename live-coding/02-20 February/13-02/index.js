@@ -153,3 +153,93 @@ const checkMonths = txt => {
   }
 };
 console.log(checkMonths("december"));
+
+let i = 3;
+while (i) {
+  // when i becomes 0, the condition becomes falsy, and the loop stops
+  console.log(i);
+  i--;
+}
+
+for (let i = 0; i < 10; i++) {
+  // if true, skip the remaining part of the body
+  if (i % 2 == 0) continue;
+  console.log(i); // 1, then 3, 5, 7, 9
+}
+
+for (let i = 0; i < 10; i++) {
+  if (i % 2) {
+    console.log(i);
+  }
+}
+
+outer: for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    let input = console.log(`Value at coords (${i},${j})`, "");
+
+    // if an empty string or canceled, then break out of both loops
+    if (!input) break outer; // (*)
+
+    // do something with the value...
+  }
+}
+console.log("Done!");
+
+for (i = 2; i <= 10; i++) {
+  if (i % 2 == 0) console.log(i);
+}
+
+function isNumberPrime(num) {
+  for (let i = 2; i < num; i++)
+    if (num % i === 0) {
+      return false;
+    }
+  return num > 1;
+}
+
+console.log(isNumberPrime(1));
+console.log("xxxx");
+function isPrime(num) {
+  if (num < 2) return false;
+  for (let i = 2; i < num; i++) {
+    if (num % i == 0) return false;
+  }
+  return true;
+}
+for (let i = 0; i < 10; i++) {
+  if (isPrime(i)) console.log(i);
+}
+console.log(isPrime(10));
+
+console.log("xxxx");
+
+for (let i = 2; i <= 10; i++) {
+  let notPrime = false;
+  for (y = 2; y <= i; y++) {
+    if (i % y === 0 && i !== y) {
+      notPrime = true;
+    }
+  }
+  if (notPrime === false) {
+    console.log(i);
+  }
+}
+
+function isPrime1(n) {
+  if (n < 2) return false;
+
+  /**
+   * An integer is prime if it is not divisible by any prime less than or equal to its square root
+   **/
+
+  var q = Math.floor(Math.sqrt(n));
+
+  for (var i = 2; i <= q; i++) {
+    if (n % i == 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+console.log(isPrime1(10));
