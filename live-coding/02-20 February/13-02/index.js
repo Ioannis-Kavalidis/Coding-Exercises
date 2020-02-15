@@ -199,6 +199,7 @@ function isNumberPrime(num) {
 
 console.log(isNumberPrime(1));
 console.log("xxxx");
+
 function isPrime(num) {
   if (num < 2) return false;
   for (let i = 2; i < num; i++) {
@@ -234,7 +235,7 @@ function isPrime1(n) {
 
   var q = Math.floor(Math.sqrt(n));
 
-  for (var i = 2; i <= q; i++) {
+  for (let i = 2; i <= q; i++) {
     if (n % i == 0) {
       return false;
     }
@@ -243,3 +244,69 @@ function isPrime1(n) {
   return true;
 }
 console.log(isPrime1(10));
+
+/**
+ * Apples and Bananas
+ *
+ *  Write a function, .vreplace() that replacing all vowels in a string with a specified vowel.
+ *
+ *  Examples
+ * "apples and bananas".vreplace("u") ➞ "upplus und bununus"
+ * "cheese casserole".vreplace("o") ➞ "chooso cossorolo"
+ * "stuffed jalapeno poppers".vreplace("e") ➞ "steffed jelepene peppers"
+ */
+
+function vreplace(str, vowel) {
+  return str.replace(/[aeiou]/gi, vowel);
+}
+console.log(vreplace("apples and bananas", "u"));
+console.log(vreplace("cheese casserole", "o"));
+console.log(vreplace("stuffed jalapeno poppers", "e"));
+
+function withoutVowels(string) {
+  var withoutVowels = "";
+  for (var i = 0; i < string.length; i++) {
+    if (!isVowel(string[i])) {
+      withoutVowels += string[i];
+    }
+  }
+  return withoutVowels;
+}
+
+function isVowel(char) {
+  return "aeiou".includes(char);
+}
+
+console.log(withoutVowels("apples and bananas", "u"));
+
+// function vreplace(str, vowel) {
+//   let newStr = "";
+//   let lowerCase = str.toLowerCase();
+//   let splitStr = lowerCase.split("");
+//   const vowels = ["a", "e", "o", "i", "u"];
+//   for (let i = 0; i < splitStr.length; i++) {
+//     if (splitStr.includes(vowels)) {
+//       splitStr = vowel;
+//       let newString = splitStr;
+//       console.log(newString);
+
+//       newStr.push(newString);
+//     }
+//   }
+//   return splitStr.join(" ");
+// }
+// console.log(vreplace("apples and bananas", "u"));
+
+function titleCase(str) {
+  //converting the giving string into array
+  str = str.split(" ");
+  //iterating over all elements in the array
+  for (var i = 0; i < str.length; i++) {
+    //converting each elem. into string
+    str[i] = str[i].toString();
+    //converting the first char to upper case &concatenating to the rest chars
+    str[i] = str[i].charAt(0).toUpperCase(str[i]) + str[i].substring(1);
+  }
+  return str;
+}
+console.log(titleCase("I am a little tea pot"));
