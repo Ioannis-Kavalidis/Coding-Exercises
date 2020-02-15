@@ -301,12 +301,10 @@ function titleCase(str) {
   //converting the giving string into array
   str = str.split(" ");
   //iterating over all elements in the array
-  for (var i = 0; i < str.length; i++) {
-    //converting each elem. into string
-    str[i] = str[i].toString();
+  for (let i = 0; i < str.length; i++) {
     //converting the first char to upper case &concatenating to the rest chars
     str[i] = str[i].charAt(0).toUpperCase(str[i]) + str[i].substring(1);
   }
-  return str;
+  return str.join(" ");
 }
 console.log(titleCase("I am a little tea pot"));
