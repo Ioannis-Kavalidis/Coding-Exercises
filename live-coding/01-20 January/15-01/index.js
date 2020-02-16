@@ -95,7 +95,7 @@ const tenPercentTip = 1.1;
 const fifteenPercentTip = 1.15;
 const twentyPercentTip = 1.2;
 console.log(
-  `Bill One: EUR${billOne * tenPercentTip}
-Bill Two: EUR${billTwo * fifteenPercentTip}
-Bill Three: EUR${billThree * twentyPercentTip}`
+  `Bill One: EUR${(billOne * tenPercentTip).toFixed(2)}
+Bill Two: EUR${(billTwo * fifteenPercentTip).toFixed(2)}
+Bill Three: EUR${(billThree * twentyPercentTip).toFixed(2)}`
 );

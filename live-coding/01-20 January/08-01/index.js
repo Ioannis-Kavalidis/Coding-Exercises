@@ -1,5 +1,5 @@
 let str = "this is long text";
-console.log(str.slice(3));
+console.log(str.slice(4));
 let str1 = "Hi";
 let str2 = "Hadi";
 console.log(`${str1} ${str2}`);
@@ -53,24 +53,27 @@ console.log(int1 + " " + int2);
 // isNaN
 console.log(isNaN(int1) ? "yeah it is a string" : "Nope sorry");
 // Converting strings into Numbers: `parseInt()`, `parseFloat()`
-let strInt = "2";
-let strInt2 = "2";
+let strInt = "2.2";
+let strInt2 = "2.2";
 let result = strInt + strInt2;
 let newNum = parseInt(strInt, 10);
 console.log(result);
+console.log(newNum);
 
 //1. Create two variables.
-// One variable should contain a string value and
-//the other should contain a number. Concatenate the string and the number.
+// One variable should contain a string value and the other should contain a number. Concatenate the string and the number.
 let var1 = "This is a string";
 let var2 = 22;
 let longStr2 = var1 + var2;
 console.log(longStr2);
 //2. Check if the following numbers are even numbers. Use a ternary and if the number is even print 30 is even, else print that it is odd.
-let num101 = 44;
-let numX = num101 % 2;
-console.log(numX);
-console.log(numX == 0 ? `${num101} is even` : `${num101} is odd`);
+let number1 = 8;
+console.log(number1 % 2 == 0 ? true : false);
+
+// let num101 = 44;
+// let numX = num101 % 2;
+// console.log(numX);
+// console.log(numX == 0 ? `${num101} is even` : `${num101} is odd`);
 
 let integer = "1005";
 let reallNum = parseInt(integer);
@@ -91,7 +94,7 @@ let mul = q * s;
 console.log(sum1, div, mul);
 
 // Exponentiation ** the power of(new added)
-let power = 2 ** 2;
+let power = 2 ** 4;
 console.log(power);
 //Math.floor()
 let float1 = 1.8;
@@ -117,11 +120,11 @@ console.log(parseFloat(strFloat1));
 let isDog = false;
 console.log(isDog ? "pat, pat" : "find me a dog to pat!");
 // Declare a variable named speedCheck. If speedlimit is 50km/h, and your speed is above that, print ‘you’re going too fast!’. If speed is lower than 50km/h, print ‘You’re driving below the speed limit, Oma’.
-let speedCheck = 50;
+let speedCheck = 49;
 let speedLimit = 50;
 let textStrTrue = "you’re going too fast!";
-let textStrFlase = "You’re driving below the speed limit, Oma";
-console.log(speedLimit <= speedCheck ? textStrTrue : textStrFlase);
+let textStrFalse = "You’re driving below the speed limit, Oma";
+console.log(speedLimit <= speedCheck ? textStrTrue : textStrFalse);
 
 // Declare a variable named age. If age is below 16, print “serve butter beer”. Otherwise print “serve beer”.
 let age = 12;
@@ -131,5 +134,5 @@ let isStudent = false;
 console.log(isStudent ? "Ticket costs €5,00" : "Ticket costs €12,00");
 // Declare a variable named okMarie. Check if there is ‘cake’ - if so, print “Let them eat cake”. If not, print “Oh, bother”.
 let okMarie = "Apple";
-print(okMarie === "cale" ? "Let them eat cake" : "Oh, bother"); // answer 1
+print(okMarie === "Apple" ? "Let them eat cake" : "Oh, bother"); // answer 1
 print(okMarie.includes("cake") ? "Let them eat cake" : "Oh, bother"); // answer 2

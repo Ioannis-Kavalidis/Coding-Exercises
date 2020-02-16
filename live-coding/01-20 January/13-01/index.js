@@ -65,7 +65,8 @@ let total5Th = 75 + 70 + 85 + 90 + 100;
 let sixthTest = totalTest - total5Th;
 console.log(`The sixth test result is ${sixthTest}`);
 
-// For James to get a 1st class degree, he needs to get an average of 80% in all 9 of his assessments. He has taken 8 assessments and his average is 78%. What is the minimum percentage he must get in his last assessment to ensure he gets a first class?
+// For James to get a 1st class degree, he needs to get an average of 80% in all 9 of his assessments. He has taken 8 assessments and his average is 78%.
+// What is the minimum percentage he must get in his last assessment to ensure he gets a first class?
 //Expected output: James needs a minimum of --% to get an 80% average.
 
 const totalScore = 80 * 9;
@@ -91,7 +92,9 @@ if (
   console.log(true);
 }
 
-// Declare the variables a, b and c, and give them number values. Check which one out of the three variables has the largest value and print it to the console. Then change the values of the variables to see if your conditional still works.
+// Declare the variables a, b and c, and give them number values.
+// Check which one out of the three variables has the largest value and print it to the console.
+// Then change the values of the variables to see if your conditional still works.
 let a, b, c;
 a = 2;
 b = 44;
@@ -100,10 +103,12 @@ console.log(Math.max(a, b, c));
 
 // Create a new string adding “Py” in front of a given string. If the given string begins with “Py” then print the original string.
 let str = "Python";
-if (str.substring(0, 2) === "Py") {
+let str2 = "Py";
+if (str.substring(0, 2) === str2) {
   console.log(str);
 }
 // Calculate the sum of the two integers. If the sum is in the range 50 to 80, print 65, otherwise print 80.
+
 let sumInt = int1 + int2;
 console.log(sumInt);
 if (sumInt >= 50 && sumInt <= 80) {
@@ -150,7 +155,7 @@ if (int22 === int21) {
 }
 // Calculate the difference between a specified number and 19. Print double the difference if the specified number is greater than 19.
 
-let num1 = 3;
+let num1 = 40;
 let numDifff = Math.abs(num1 - 19);
 let numDo = numDifff * 2;
 if (num1 > 19) {

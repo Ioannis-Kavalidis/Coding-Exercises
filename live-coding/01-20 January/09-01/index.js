@@ -64,8 +64,11 @@ let floatNum1 = 0.2;
 let num = 3;
 let result = floatNum * floatNum1;
 // num.toFixed(num)
-let lastResult = result.toFixed(num);
-console.log(lastResult);
+let numObj = 12345.6789;
+console.log(numObj.toFixed());
+console.log(numObj.toFixed(1));
+console.log(numObj.toFixed(3));
+
 // Mauricio
 console.log(Math.sqrt(9));
 
@@ -122,4 +125,6 @@ console.log(Math.floor(-9.78));
 // Create a program that prints a random integer from 1 - 6.
 console.log(Math.floor(Math.random() * 6) + 1);
 //Math.round
+console.log(Math.round(5.95), Math.round(5.5), Math.round(5.45));
 //Math.trunc
+console.log(Math.trunc(42.84));
