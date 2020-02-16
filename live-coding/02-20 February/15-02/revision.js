@@ -76,6 +76,11 @@ console.log(difference(3, 5));
 console.log(difference(5, 3));
 
 // .startsWith()
+// .endsWith()
+// .toString()
+// .charAt()
+let chr1 = "Astra";
+console.log(chr1.charAt(4)); // a
 //Array.push()  // Adding to the lastItem
 // Array.unshift() // Adding to the firstItem
 // Array.pop()  // Removing  the lastItem
@@ -86,6 +91,7 @@ console.log(difference(5, 3));
 // Array.split()
 // Array.join()
 // Array.reverse()
+
 // Array.concat() merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 // Callback functions:
 // Array.filter()   method creates a new array with all elements that pass the test implemented by the provided function.
@@ -140,4 +146,34 @@ let countedNames = names.reduce(function(allNames, name) {
   return allNames;
 }, {});
 
-// toString()
+// using loop to have all properties when you print out with for in // accessing all properties of the object
+for (let prop in car) {
+  console.log(`car.${prop} : ${car[prop]} `);
+}
+// Object entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs,
+// in the same order as that provided by a for in loop(The only important difference is that a for in loop enumerates properties in the prototype chain as well).
+const object1 = {
+  a: "somestring",
+  b: 42
+};
+
+for (let [key, value] of Object.entries(object1)) {
+  console.log(`${key}: ${value}`);
+}
+
+const obj2 = { 0: "a", 1: "b", 2: "c" };
+console.log(Object.entries(obj2));
+
+// Object.keys , prints out the key names with a string
+console.log(Object.keys(object1));
+
+// Object.values , prints out the values of he keys with a string
+console.log(Object.values(object1));
+
+// Object.assign()  method copies all enumerable own properties from one or more source objects to a target object. It returns the target object.
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+const returnedTarget = Object.assign(target, source);
+
+console.log(target); // expected output: Object { a: 1, b: 4, c: 5 }
+console.log(returnedTarget); // expected output: Object { a: 1, b: 4, c: 5 }

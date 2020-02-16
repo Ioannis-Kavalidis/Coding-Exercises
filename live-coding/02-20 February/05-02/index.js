@@ -87,39 +87,6 @@ console.log(fun2({ firstName: "Eli" }, { lastName: "Nelli" }));
 
 // Exercise
 
-// const getTheSign = (name, day, month, year) => {
-//   if ((month == 1 && day <= 20) || (month == 12 && day >= 22)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is Capricorn`;
-//   } else if ((month == 1 && day >= 21) || (month == 2 && day <= 18)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is Aquarius`;
-//   } else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is  Pisces`;
-//   } else if ((month == 3 && day >= 21) || (month == 4 && day <= 20)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is Aries`;
-//   } else if ((month == 4 && day >= 21) || (month == 5 && day <= 20)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is Taurus`;
-//   } else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is Gemini`;
-//   } else if ((month == 6 && day >= 22) || (month == 7 && day <= 22)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is Cancer`;
-//   } else if ((month == 7 && day >= 23) || (month == 8 && day <= 23)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is Leo`;
-//   } else if ((month == 8 && day >= 24) || (month == 9 && day <= 23)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is Lirgo`;
-//   } else if ((month == 9 && day >= 24) || (month == 10 && day <= 23)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is Libra`;
-//   } else if ((month == 10 && day >= 24) || (month == 11 && day <= 22)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is Scorpio`;
-//   } else if ((month == 11 && day >= 23) || (month == 12 && day <= 21)) {
-//     return `Hey I am ${name}, I was born in ${year} and my zodiac sign is Sagittarius`;
-//   } else {
-//     return `Not a valid date`;
-//   }
-// };
-
-// const get = getTheSign("Hadi", 03, 01, 1983);
-// console.log(get);
-
 // function zodiac(name, day, month, year) {
 //   const zodiacName = [
 //     "empty",
@@ -148,97 +115,32 @@ console.log(fun2({ firstName: "Eli" }, { lastName: "Nelli" }));
 // var zodiacSign = zodiac("Hadi", 20, 01, 1983);
 // console.log(zodiacSign);
 
-// me
-// const zodiacName1 = [
-//   "Capricorn",
-//   "Aquarius",
-//   "Pisces",
-//   "Aries",
-//   "Taurus",
-//   "Gemini",
-//   "Cancer",
-//   "Leo",
-//   "Virgo",
-//   "Libra",
-//   "Scorpio",
-//   "Sagittarius"
-// ];
+//3rd soluton the best of all
+const zodiacName1 = [
+  "Capricorn",
+  "Aquarius",
+  "Pisces",
+  "Aries",
+  "Taurus",
+  "Gemini",
+  "Cancer",
+  "Leo",
+  "Virgo",
+  "Libra",
+  "Scorpio",
+  "Sagittarius"
+];
 
-// var lastDayOfSign = [19, 18, 20, 19, 20, 20, 22, 22, 22, 22, 21, 21];
+var lastDayOfSign = [19, 18, 20, 19, 20, 20, 22, 22, 22, 22, 21, 21];
 
-// if (day > lastDayOfSign[month]) {
-//   return zodiacName1[month + 1];
-// } else {
-//   return zodiacName1[month];
-// }
-// console.log();
+if (day > lastDayOfSign[month]) {
+  return zodiacName1[month + 1];
+} else {
+  return zodiacName1[month];
+}
+console.log();
 
-// function getZodiac(name,day, month, year) {
-//   let zodiacs = {
-//     aquarius: {
-//       start: [20, 1],
-//       end: [18, 2]
-//     },
-//     pishes: {
-//       start: [19, 2],
-//       end: [20, 3]
-//     },
-//     aries: {
-//       start: [21, 3],
-//       end: [19, 4]
-//     },
-//     taurus: {
-//       start: [20, 4],
-//       end: [20, 5]
-//     },
-//     gemini: {
-//       start: [21, 5],
-//       end: [20, 6]
-//     },
-//     cancer: {
-//       start: [21, 6],
-//       end: [22, 7]
-//     },
-//     leo: {
-//       start: [23, 7],
-//       end: [22, 8]
-//     },
-//     virgo: {
-//       start: [23, 8],
-//       end: [22, 9]
-//     },
-//     libra: {
-//       start: [23, 9],
-//       end: [22, 10]
-//     },
-//     scorpio: {
-//       start: [23, 10],
-//       end: [21, 11]
-//     },
-//     sagittarius: {
-//       start: [22, 11],
-//       end: [21, 12]
-//     },
-//     capricorn: {
-//       start: [22, 12],
-//       end: [19, 1]
-//     }
-//   };
-
-//   for (let prop in zodiacs) {
-//     if (
-//       month >= zodiacs[prop].start[1] &&
-//       month <= zodiacs[prop].end[0] &&
-//       day >= zodiacs[prop].start[1] &&
-//       day <= zodiacs[prop].end[0]
-//     ) {
-//       console.log(`You're a ${prop}!`);
-//     }
-//   }
-// }
-
-// getZodiac(10, 3);
-
+//1st silution not that good
 function zodiacName(name, day, month, year) {
   const zodiac = {
     name: name,
@@ -283,3 +185,81 @@ function zodiacName(name, day, month, year) {
   return zodiac.output();
 }
 console.log(zodiacName("Hadi", "05", "01", "1983"));
+
+// 2nd solution way better than the first
+let zodiacs = {
+  capricorn: {
+    start: "0000",
+    end: "0119"
+  },
+  aquarius: {
+    start: "0120",
+    end: "0218"
+  },
+  pisces: {
+    start: "0219",
+    end: "0320"
+  },
+  Aries: {
+    start: "0321",
+    end: "0419"
+  },
+  taurus: {
+    start: "0420",
+    end: "0520"
+  },
+  gemini: {
+    start: "0521",
+    end: "0620"
+  },
+  cancer: {
+    start: "0621",
+    end: "0722"
+  },
+  leo: {
+    start: "0723",
+    end: "0822"
+  },
+  virgo: {
+    start: "0823",
+    end: "0922"
+  },
+  libra: {
+    start: "0923",
+    end: "1022"
+  },
+  scorpio: {
+    start: "1023",
+    end: "1121"
+  },
+  sagittarius: {
+    start: "1123",
+    end: "1221"
+  },
+  Capricorn: {
+    start: "1222",
+    end: "1231"
+  }
+};
+function getZodiac(name, days, months, year) {
+  const myZodiac = {
+    name: name,
+    day: days,
+    month: months,
+    year: year,
+    output: function() {
+      zodiacs = Object.entries(zodiacss);
+      let combinedMonthAndDay = myZodiac.month + myZodiac.day;
+      if (
+        combinedMonthAndDay >= zodiacs[myZodiac.month][1].start &&
+        combinedMonthAndDay <= zodiacs[myZodiac.month][1].end
+      ) {
+        return `${name} you are a ${zodiacs[myZodiac.month][0]}`;
+      } else {
+        return zodiacs[myZodiac.month - 1][0];
+      }
+    }
+  };
+  return myZodiac.output();
+}
+console.log(getZodiac("John", "22", "12", "1983"));

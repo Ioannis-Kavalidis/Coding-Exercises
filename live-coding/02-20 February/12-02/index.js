@@ -248,3 +248,54 @@ console.log(isPrime(2)); //true
 console.log(isPrime(7)); //true
 console.log(isPrime(9)); //false
 console.log(isPrime(10)); //false
+
+// ### Bonus Magic Square:
+// A 3x3 magic square is a 3x3 grid of the numbers 1-9 such that each row, column, and major diagonal adds up to 15.
+// Here's an example:
+// 8 1 6
+// 3 5 7
+// 4 9 2
+// The major diagonals in this example are 8 + 5 + 2 and 6 + 5 + 4.
+// #### Examples:
+// [8, 1, 6, 3, 5, 7, 4, 9, 2] -> true
+// [2, 7, 6, 9, 5, 1, 4, 3, 8] -> true
+// [3, 5, 7, 8, 1, 6, 4, 9, 2] -> false
+// [8, 1, 6, 7, 5, 3, 4, 9, 2] -> false
+
+function isMagic(sq) {
+  let n = Math.sqrt(sq.length);
+  let r = 0,
+    c = 0,
+    d = 0,
+    magic = 0;
+  //checking rows & cols.
+  for (j = 0; j < n; j++) {
+    for (i = 0; i < n; i++) {
+      r += sq[n * j + i]; //adding rows
+      c += sq[j + n * i]; //adding columns
+    }
+    if (magic == 0) {
+      magic = c;
+    }
+    if (r != magic || c != magic) {
+      //not a magic square
+      return false;
+    }
+    r = 0;
+    c = 0;
+  }
+  //diagonal checking
+  for (i = 0; i < n; i++) {
+    d += sq[i * (n + 1)];
+    d += sq[(i + 1) * (n - 1)];
+  }
+  if (d != 2 * magic) {
+    //not a magic square.
+    return false;
+  }
+  return true;
+}
+console.log(isMagic([8, 1, 6, 3, 5, 7, 4, 9, 2]));
+console.log(isMagic([2, 7, 6, 9, 5, 1, 4, 3, 8]));
+console.log(isMagic([3, 5, 7, 8, 1, 6, 4, 9, 2]));
+console.log(isMagic([8, 1, 6, 7, 5, 3, 4, 9, 2]));

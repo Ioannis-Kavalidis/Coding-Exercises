@@ -6,10 +6,9 @@ const emptySpaces = str => {
       counter++;
     }
   }
-  return str.length - counter + " Character in your text";
+  return str.length - counter + " Characters in your text";
 };
-console.log("emptySpaces");
-console.log(emptySpaces("Hi i"));
+console.log(emptySpaces("Hi I am"));
 // Create a function that will receive a (user name , salary and kid’s names)
 // If the user has one kid subtract 30% taxes from the salary
 // For two kids subtract 25% and 20% for more than two.
@@ -27,7 +26,7 @@ const salaryCalculator = (userName, salary, ...args) => {
     } else if (args.length == 1) {
       finalSalary = salary - salary * twentyFivePercent;
     } else if (args.length == 2) {
-      finalSalary = salary - salary * twentyFivePercent;
+      finalSalary = salary - salary * twentyPercent;
     } else if (args.length > 2) {
       finalSalary = salary - salary * fiftyFivePercent;
     } else {
@@ -77,7 +76,7 @@ const bankChecker = str => {
   let strToArr = str.toLowerCase().split(" ");
   for (let i = 0; i < strToArr.length; i++) {
     let firstTwoChr = strToArr[i].slice(0, 2);
-    let remainderStr = strToArr[i].slice(2, strToArr[i].length);
+    let remainderStr = strToArr[i].slice(2);
     //console.log(remainderStr);
     if (firstTwoChr == "de") {
       if (remainderStr.length != 20 || isNaN(remainderStr)) {

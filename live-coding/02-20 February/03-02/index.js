@@ -96,7 +96,6 @@ const times = multiplier(2)(5); // call first the outer function and then the in
 console.log(times);
 
 var all = 3;
-
 (function() {
   var all = "Hi";
   console.log(all); // closed function so prints out "Hi"
@@ -156,6 +155,7 @@ console.log(text.endsWith("I", 4));
 
 let chr = "c"; // UTF-16
 console.log(chr.charCodeAt(0) - 96);
+console.log("xxxxsssss");
 
 // charAt()
 
@@ -180,10 +180,6 @@ const boulderingYesterday = (answer => {
   }
 })("Yes");
 
-let re = /\w+/;
-let re1 = new RegExp("\\w+");
-console.log(re1);
-
 const pam = (a, b) => {
   const nam = c => {
     return c * c;
@@ -205,167 +201,3 @@ add1(); //2
 add1(); //3
 console.log(add1());
 console.log(add1());
-
-let zodiacss = {
-  capricorn: {
-    start: "0000",
-    end: "0119"
-  },
-  aquarius: {
-    start: "0120",
-    end: "0218"
-  },
-  pisces: {
-    start: "0219",
-    end: "0320"
-  },
-  Aries: {
-    start: "0321",
-    end: "0419"
-  },
-  taurus: {
-    start: "0420",
-    end: "0520"
-  },
-  gemini: {
-    start: "0521",
-    end: "0620"
-  },
-  cancer: {
-    start: "0621",
-    end: "0722"
-  },
-  leo: {
-    start: "0723",
-    end: "0822"
-  },
-  virgo: {
-    start: "0823",
-    end: "0922"
-  },
-  libra: {
-    start: "0923",
-    end: "1022"
-  },
-  scorpio: {
-    start: "1023",
-    end: "1121"
-  },
-  sagittarius: {
-    start: "1123",
-    end: "1221"
-  },
-  Capricorn: {
-    start: "1222",
-    end: "1231"
-  }
-};
-function getZodiac(name, days, months, year) {
-  const myZodiac = {
-    name: name,
-    day: days,
-    month: months,
-    year: year,
-    output: function() {
-      zodiacs = Object.entries(zodiacss);
-      let combinedMonthAndDay = myZodiac.month + myZodiac.day;
-      if (
-        combinedMonthAndDay >= zodiacs[myZodiac.month][1].start &&
-        combinedMonthAndDay <= zodiacs[myZodiac.month][1].end
-      ) {
-        return `${name} you are a ${zodiacs[myZodiac.month][0]}`;
-      } else {
-        return zodiacs[myZodiac.month - 1][0];
-      }
-    }
-  };
-  return myZodiac.output();
-}
-console.log(getZodiac("John", "22", "12", "1983"));
-
-// function getTheZodiac(name, day, month, year) {
-//   const myZodiac = {
-//     name: name,
-//     day: day,
-//     month: month,
-//     year: year,
-//     output: function() {
-//       console.log(`${name} you are a ${signed()}`);
-//     }
-//   };
-//   let zodiacs = {
-//     capricorn: {
-//       start: "0000",
-//       end: "0119"
-//     },
-//     aquarius: {
-//       start: "0120",
-//       end: "0218"
-//     },
-//     pisces: {
-//       start: "0219",
-//       end: "0320"
-//     },
-//     Aries: {
-//       start: "0321",
-//       end: "0419"
-//     },
-//     taurus: {
-//       start: "0420",
-//       end: "0520"
-//     },
-//     gemini: {
-//       start: "0521",
-//       end: "0620"
-//     },
-//     cancer: {
-//       start: "0621",
-//       end: "0722"
-//     },
-//     leo: {
-//       start: "0723",
-//       end: "0822"
-//     },
-//     virgo: {
-//       start: "0823",
-//       end: "0922"
-//     },
-//     libra: {
-//       start: "0923",
-//       end: "1022"
-//     },
-//     scorpio: {
-//       start: "1023",
-//       end: "1121"
-//     },
-//     sagittarius: {
-//       start: "1123",
-//       end: "1221"
-//     },
-//     capricorn: {
-//       start: "1222",
-//       end: "1231"
-//     }
-//   };
-
-//   let combinedMonthAndDay = month + day;
-//   console.log(combinedMonthAndDay);
-
-//   let signed = () => {
-//     for (let prop in zodiacs) {
-//       if (
-//         combinedMonthAndDay >= zodiacs[prop].start &&
-//         combinedMonthAndDay <= zodiacs[prop].end
-//       ) {
-//         return `${zodiacs[prop]}`;
-//       } else {
-//         return "invalid date";
-//       }
-//     }
-//     console.log(signed());
-//   };
-
-//   return myZodiac.output();
-// }
-
-// console.log(getTheZodiac("John", "24", "11", "1983"));

@@ -74,6 +74,7 @@ console.log(Object.keys(person));
 console.log(Object.values(person));
 
 // Object.entries , prints out the keys and the values with for of // accessing properties of the object individually
+console.log("xxxxsssss");
 
 for (let [key, value] of Object.entries(person)) {
   console.log(`${key} : ${value} `);
@@ -85,6 +86,7 @@ person.print();
 console.log(person.old());
 
 // Object Person. Create an object named person. Loop through the object and print both the property and value of the object.
+console.log("xxxxsssss");
 
 const person1 = {
   name: "John",

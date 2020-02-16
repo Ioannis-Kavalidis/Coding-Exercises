@@ -245,3 +245,36 @@ function pigLatin(str) {
 }
 const strPig = "Cats are great pets";
 console.log(pigLatin(strPig));
+
+// with the vowels
+// function pigLatin(str) {
+//   let translation = [];
+//   const vowels = ["a", "e", "o", "i", "u"];
+//   let lowerCase = str.toLowerCase();
+//   let splitStr = lowerCase.split(" ");
+//   console.log(splitStr + "  THis is split arr");
+//   for (let i = 0; i < splitStr.length; i++) {
+//     let firstChr = splitStr[i][0]; //b anana
+//     console.log(firstChr + " first chr"); //anana
+//     let remainder = splitStr[i].slice(1, splitStr[i].length);
+//     console.log(remainder + " remainder");
+//     if (vowels.includes(firstChr)) {
+//       const firstChrVal =
+//         (i ? firstChr : firstChr.toUpperCase()) + remainder + "way";
+//       translation.push(firstChrVal);
+//     } else {
+//       if (i == 0) {
+//         let firstCharRem = remainder[0];
+//         let wordRemainder = remainder.slice(1, remainder.length);
+//         remainder = firstCharRem.toUpperCase() + wordRemainder;
+//       }
+//       const newString = remainder + firstChr + "ay";
+//       translation.push(newString);
+//       console.log(translation);
+//     }
+//   }
+//   let result = translation.join(" ");
+//   return result;
+// }
+// const strPig = "Cats are great pets";
+// console.log(pigLatin(strPig));

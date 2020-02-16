@@ -28,7 +28,7 @@ function monthCheck(string) {
     "march",
     "april",
     "may",
-    "jun",
+    "june",
     "july",
     "august",
     "september",
@@ -84,9 +84,7 @@ function monthCheck(string) {
   }
   return result;
 }
-console.log("monthCheck");
-
-console.log(monthCheck("hi is jun hhhh"));
+console.log(monthCheck("hi is june hhhh"));
 console.log(monthCheck("Hi hi is"));
 // Create a function that takes a string and a word, and then returns true or false depending on whether the word starts with the initial string.
 // dictionary("bu", "button") ➞ true
@@ -95,12 +93,19 @@ function strWordCheck(str, word) {
   const indexEnd = str.length;
   const lowerCaseStr = str.toLowerCase();
   const lowerCaseWord = word.toLowerCase();
-  if (lowerCaseWord.substring(lowerCaseStr, indexEnd) === str) {
+  // 1st way
+  if (str === lowerCaseWord.substring(lowerCaseStr, indexEnd)) {
     return true;
   } else {
     return false;
   }
 }
+// 2nd way
+//   if (lowerCaseWord.startsWith(lowerCaseStr)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
 console.log("strWordCheck");
 console.log(strWordCheck("hicc", "hiccough"));
 console.log(strWordCheck("spices", "German food uses spices"));
@@ -114,7 +119,8 @@ const twofer = (who = "you") => {
 console.log("twofer");
 console.log(twofer("Ali")); // -> "Two for me and one for Ali"
 console.log(twofer()); // -> "Two for me and one for you"
-// Complete the function below so that it still calculates the power of a number even if the `exp` argument is not passed to it. The default `exp` should be set to 2.
+// Complete the function below so that it still calculates the power of a number even if the `exp` argument is not passed to it.
+// The default `exp` should be set to 2.
 // Example: Calling the function with 2 and 4 will return 16 (2 to the power of 4), If you call it with just 2, it should return 4 (2 to the power of 2).
 
 const exponent = (num, exp = 2) => {
@@ -131,7 +137,7 @@ console.log(exponent(3, 3)); // -> 27
 console.log(exponent(3)); // -> 9
 
 // Create a function will calculate a student degrees for 6 subjects,
-//if the average was less than 70 will print (F)
+// if the average was less than 70 will print (F)
 // Over 70 and less than 80 (C)
 // Over than 80 and less than 85 (B)
 // Over than 85 and less than 90 (A)
@@ -156,7 +162,6 @@ function average(...args) {
   }
   return result;
 }
-console.log("average");
 console.log(average(99, 44, 44, 80, 80, 98, 89));
 
 // Create a function that accepts the (user name, age, address and unlimited number of activities the user enjoy doing)
@@ -164,13 +169,12 @@ console.log(average(99, 44, 44, 80, 80, 98, 89));
 // * If one of his activities was dance ￼or party print "you are cool".
 
 function userData(userName, age, address, ...args) {
-  let result = `Hey ${userName}, really nice to live in ${address}, hope you are having fin in your ${age} `;
+  let result = `Hey ${userName}, really nice to live in ${address}, hope you are having fun in your ${age} `;
   if (args.includes("dance") || args.includes("party")) {
     result += "You are cool";
   }
   return result;
 }
-console.log("userData");
 console.log(userData("Ali", 30, "xx Str", "dance", "party"));
 console.log(userData("Olga", 50, "xx Str", "party"));
 console.log(userData("Nancy", 10, "xx Str", "swimming"));
@@ -213,6 +217,7 @@ console.log(XO("zzoo"));
 // Count Occurrences. Create a function that accepts two arguments: a string and a letter. The function should count the number of occurrences of that letter in the string.
 // i.e. countOccurrences(“this is a string”, “i”) ➞ 3
 
+//1st solution
 function countOccurrences(str, letter) {
   let counter = 0;
   for (let i = 0; i < str.length; i++) {
@@ -222,8 +227,15 @@ function countOccurrences(str, letter) {
   }
   return counter;
 }
-console.log("countOccurrences");
-console.log(countOccurrences("this is a string", "i"));
+
+//2nd solution
+
+const countOccurrences1 = (string, letter) => {
+  let letterOccurrences = string.split(letter).length - 1;
+  return letterOccurrences;
+};
+console.log(countOccurrences1("this is a string", "i"));
+console.log(countOccurrences1("this is a string", "i"));
 
 // Create a function which calculates how old a dog is in doggie years. The function should accept one argument that is the puppy’s age in human years. Calculate the dog’s age in dog years based on the calculation of 1 human year = 7 dog years.
 // i.e. dogAge(4) ➞ “Your doggo is 28 years old in dog years!”
@@ -293,5 +305,24 @@ function validate(email) {
   }
 }
 
+// 2nd way
+
+const email = address => {
+  let thirdToLast = address.substring(address.length - 4);
+  let secondToLast = address.substring(address.length - 3);
+  if (
+    address.includes("@") &&
+    address.includes(".") &&
+    "@" != address[0] &&
+    "." != address[0] &&
+    (thirdToLast || secondToLast == ".")
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(email("johnsmith@email.com"));
+console.log(email("johnsmithemail.com"));
 console.log(validate("contact@hadi-nsreeny.com"));
 console.log(validate("@hadi-nsreeny.com"));
