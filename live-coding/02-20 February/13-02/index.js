@@ -63,46 +63,108 @@ fido.bark();
 // Example
 // getMonthName(15) -> Invalid Month Number!
 
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December"
-];
+// Solution without catch and throw
 
-function getMonthName(month) {
-  if (month > 0 && month < 13) {
-    return months[month - 1];
-  } else {
-    return `Invalid Month Number!`;
-  }
-}
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December"
+// ];
+// function getMonthName(month) {
+//   if (month > 0 && month < 13) {
+//     return months[month - 1];
+//   } else {
+//     return `Invalid Month Number!`;
+//   }
+// }
+// console.log(getMonthName(12));
+// console.log(getMonthName(13));
 
-console.log(getMonthName(12));
-console.log(getMonthName(13));
+// solution with catch and throw
+// try {
+//   const getMonthName = numOfMonth => {
+//     if (numOfMonth <= 12 && numOfMonth >= 1) {
+//       console.log(numOfMonth);
+//     } else throw "Invalid month number";
+//   };
+//   getMonthName(12);
+// } catch (error) {
+//   console.log(error);
+// }
 
 // 3. Exercise: Reverse
 // Create a function that reverses a string. Throw a custom error if the user inputs another type as an argument.
 // Example
 // reverseString(2019) -> ERROR! This is not a string!
 
-function reverseString(str) {
-  if (typeof str == "string") {
-    return str
-      .split("")
-      .reverse()
-      .join("");
-  } else {
-    return `ERROR! This is not a string`;
+// function reverseString(str) {
+//   if (typeof str == "string") {
+//     return str
+//       .split("")
+//       .reverse()
+//       .join("");
+//   } else {
+//     return `ERROR! This is not a string`;
+//   }
+// }
+// console.log(reverseString("hello"));
+// console.log(reverseString(2019));
+
+function reverseString2(str) {
+  try {
+    if (typeof str !== "string") {
+      console.log(`ERROR! This is not a string`);
+    } else {
+      str
+        .split("")
+        .reverse()
+        .join("");
+      console.log(`This is a string`);
+    }
+  } catch (error) {
+    console.log(error);
   }
 }
-console.log(reverseString("hello"));
-console.log(reverseString(2019));
+reverseString2("hello");
+reverseString2(2019);
+reverseString2(undefined);
+console.log("xxxxxxxxxxx");
+
+// function reverseString3(s) {
+//   try {
+//     if (typeof s === "string") {
+//       s = s
+//         .split("")
+//         .reverse()
+//         .join("");
+//       console.log(s);
+//     } else {
+//       throw s.split();
+//     }
+//   } catch (e) {
+//     console.log(e.message);
+//     console.log(s);
+//   }
+// }
+// reverseString3("hello");
+// reverseString3(2019);
+
+let codes = {
+  "49": "Germany",
+  "41": "Switzerland",
+  "44": "Great Britain",
+  "1": "USA"
+};
+
+for (let prop in codes) {
+  console.log(codes[prop]); // 1, 41, 44, 49
+}
