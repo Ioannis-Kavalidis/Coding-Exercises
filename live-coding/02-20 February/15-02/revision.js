@@ -68,9 +68,76 @@ numObj.toFixed(3);
 //Math.trunc
 console.log(Math.trunc(42.84));
 
-// Math.abs()
+// Math.abs() checking their difference no matter the +- sign
 function difference(a, b) {
   return Math.abs(a - b);
 }
 console.log(difference(3, 5));
 console.log(difference(5, 3));
+
+// .startsWith()
+//Array.push()  // Adding to the lastItem
+// Array.unshift() // Adding to the firstItem
+// Array.pop()  // Removing  the lastItem
+// Array.shift()  // Removing the firstItem
+// Array.indexOf(<item>)
+// Array.includes();
+// Array.slice()
+// Array.split()
+// Array.join()
+// Array.reverse()
+// Array.concat() merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+// Callback functions:
+// Array.filter()   method creates a new array with all elements that pass the test implemented by the provided function.
+const words = [
+  "spray",
+  "limit",
+  "elite",
+  "exuberant",
+  "destruction",
+  "present"
+];
+const result = words.filter(word => word.length > 6);
+console.log(result);
+// Array.find()   method returns the value of the first element in the provided array that satisfies the provided testing function.
+const array1 = [5, 12, 8, 130, 44];
+const found = array1.find(element => element > 10);
+console.log(found);
+//// Array.map()    creates a new array populated with the results of calling a provided function on every element in the calling array.
+const array1 = [1, 4, 9, 16];
+const map1 = array1.map(x => x * 2);
+console.log(map1);
+// forEach() method executes a provided function once for each array element.
+const array1 = ["a", "b", "c"];
+array1.forEach(element => console.log(element));
+console.log("xxxxssss");
+// Array.reduce()   method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+
+//Sum all the values of an array
+let total = [0, 1, 2, 3].reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+);
+
+// Counting instances of values in an object
+let names = ["Alice", "Bob", "Tiff", "Bruce", "Alice"];
+let countedNames = names.reduce(function(allNames, name) {
+  if (name in allNames) {
+    allNames[name]++;
+  } else {
+    allNames[name] = 1;
+  }
+  return allNames;
+}, {});
+
+// toString()

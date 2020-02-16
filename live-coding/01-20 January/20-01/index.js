@@ -98,7 +98,8 @@ const arraySting = ["This", "is", "array", "was", "string"];
 let stringToarr = arraySting.join(" ");
 console.log(stringToarr);
 
-// sumOfNumbers. Create a program that adds up the numbers in an array (of at least 3 numbers). Bonus: Print to screen both the sum and the product of these numbers.
+// sumOfNumbers. Create a program that adds up the numbers in an array (of at least 3 numbers).
+// Bonus: Print to screen both the sum and the product of these numbers.
 let intArr = [2, 4, 5, 7];
 let result = 0;
 let product = 1;
@@ -110,13 +111,16 @@ console.log(
   `The sum for your Array is ${result}, The product for your Array is ${product}.`
 );
 
-// Hello Frien Create an array filled with your friends’ and family’s names. Loop over the array and greet each friend e.g. Hello Maria! Hello Mike! etc. Bonus: Print the indexes of each item in the array. Expected output example: Mike is at index 1 of my friends array.
+// Hello Frien Create an array filled with your friends’ and family’s names.
+// Loop over the array and greet each friend e.g. Hello Maria! Hello Mike! etc. Bonus: Print the indexes of each item in the array.
+// Expected output example: Mike is at index 1 of my friends array.
 const names2 = ["Hadi", "Ali", "Olga", "Nancy"];
 for (let i = 0; i < names2.length; i++) {
   console.log(`Hello ${names2[i]}, and he is index ${i} of Names array`);
 }
 
-// City Names. Create an array of city names. Loop through the array and add the city names to a string. Example of expected output: Berlin, Paris, Prague, Rome.
+// City Names. Create an array of city names. Loop through the array and add the city names to a string.
+// Example of expected output: Berlin, Paris, Prague, Rome.
 const cityNames = ["Berlin", "Paris", "London", "Dubai"];
 let cityNamesStr = "";
 for (let i = 0; i < cityNames.length; i++) {
@@ -128,7 +132,8 @@ for (let i = 0; i < cityNames.length; i++) {
   }
 }
 console.log(cityNamesStr);
-// Odds and Evens. Create a program that changes a given array by adding 1 to each odd integer and subtracting 1 from each even integer. Examples:[3, 5, 2, 4] ➞ expected output: [4, 6, 1, 3]
+// Odds and Evens. Create a program that changes a given array by adding 1 to each odd integer and subtracting 1 from each even integer. Examples:
+// [3, 5, 2, 4] ➞ expected output: [4, 6, 1, 3]
 // [6, 9, 10, 20] ➞ expected output: [5, 10, 9, 19]
 let numArr = [2, 3, 1, 4, 5]; // result => 1,4,2,3,6
 let newNumArr = [];
@@ -143,12 +148,14 @@ for (let i = 0; i < numArr.length; i++) {
     newNumArr.push(int);
   }
 }
-console.log(numArr);
+console.log(newNumArr);
 // Capitalize. Create a program that capitalises the first letter of each element in an array of names. Examples:
 // [“matt”, “sArA”, “lara”] ➞ [“Matt”, “Sara”, “Lara”]
 // [“samuel”, “MARIA”, “luke”, “mary”] ➞ [“Samuel”, “Maria”, “Luke”, “Mary”]
 // [“Cynthia”, “Karen”, “Jane”, “Carrie”] ➞ [“Cynthia”, “Karen”, “Jane”, “Carrie”]
-const arrNames = ["sara", "ali", "naNCy"];
+
+const arrNames = ["saRa", "alI", "naNCy"];
+
 for (let i = 0; i < arrNames.length; i++) {
   arrNames[i] = // i= 0 => sara
     arrNames[i][0].toUpperCase() + arrNames[i].substr(1).toLowerCase();

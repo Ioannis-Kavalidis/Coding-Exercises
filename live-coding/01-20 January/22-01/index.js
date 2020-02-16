@@ -17,20 +17,20 @@ console.log(sum(5, 4));
 // console.log(sum1(3, 2));
 
 const names = ["Ali", "Olga", "Nancy", "Hadi"];
-// const newArr = names.map((name, index) => name[0] == "O");
-// console.log(newArr);
+const newArr1 = names.map(name => name[0] == "O");
+console.log(newArr1);
 
 // Array.map(value,index=>{}) // creates a new array
-names.forEach((name, index) => console.log(name + " index num =" + index));
+names.forEach((name, index) => console.log(name + " index num = " + index));
 // Old School
 for (let i = 0; i < names.length; i++) {
   console.log(names[i] + " index num =" + i);
 }
-// Array.reduce()
+// Array.reduce()   method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
 //const reducer = (acc, cur) => acc + value;
-const numArr = [1, 3, 4, 6, 7];
-const reducer = (acc, cur) => acc + cur; // acc = 100  cur = 1
-console.log(numArr.reduce(reducer, 100)); //100 is starting value for acc
+const numArr = [1, 3, 4, 6];
+const reducer = (acc, cur) => acc + cur; // acc = 10  cur = 1
+console.log(numArr.reduce(reducer, 10)); //10 is starting value for acc
 
 //Don't Do This Way
 // function one() {
@@ -149,7 +149,3 @@ function unique(arr) {
 
 let numArray = [1, 1, 2, 3, 3, 1];
 console.log(unique(numArray));
-
-// variables in function
-
-// local vs global

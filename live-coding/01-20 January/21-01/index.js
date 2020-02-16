@@ -21,6 +21,8 @@ let arr1 = [1, 2, 3];
 let arr2 = [4, 3, 6];
 let arrTotal = arr1.concat(arr2);
 console.log(arrTotal);
+console.log("xxxxxssss");
+
 // Array.filter()   //creates a new array
 let result1 = names.filter(name => name.length == 4);
 console.log(result1);
@@ -35,10 +37,11 @@ console.log(result3);
 
 // Reverse the string: “JavaScript”.
 const str1 = "JavaScript";
-let strToArr = str1.split("");
-strToArr.reverse();
-let revStr = strToArr.join("");
-console.log(revStr);
+let revStr1 = str1
+  .split("")
+  .reverse()
+  .join("");
+console.log(revStr1);
 // Make an array of your siblings’ names or your favorite movie characters’ names.
 const coolNames = ["Ali", "Olga", "Hadi", "Nancy"];
 
@@ -88,6 +91,8 @@ function arrBig(array) {
 arrBig(numbers);
 console.log(arrBig(numbers));
 console.log(arrBig(numbers2));
+
+const names2 = ["Ali", "Hadi", "Nancy", "Olga"];
 function fourArrChar(array) {
   let result = [];
   for (let i = 0; i < array.length; i++) {
@@ -106,9 +111,8 @@ function Ochr(array) {
   }
   return result;
 }
-const names2 = ["Ali", "Hadi", "Nancy", "Olga"];
-// console.log(fourArrChar(names2));
-// console.log(Ochr(names2));
+console.log(fourArrChar(names2));
+console.log(Ochr(names2));
 const monthNames = [
   "January",
   "February",
@@ -176,7 +180,7 @@ function nameOfThatMonthEasyVersion(num) {
   }
   return result;
 }
-console.log(nameOfThatMonthEasyVersion("hhhh"));
+console.log(nameOfThatMonthEasyVersion("11"));
 // console.log(nameOfThatMonth(100));
 // console.log(nameOfThatMonth(2));
 // console.log(nameOfThatMonth(22));
@@ -194,6 +198,7 @@ console.log(nameOfThatMonthEasyVersion("hhhh"));
 //   }
 //   return newArray;
 // }
+const names1 = ["Hadi", "Olga", "Nancy", "Ahmad", "Ali"];
 function reverseNames(arr) {
   let newArray = [];
   let str = "";
@@ -206,7 +211,6 @@ function reverseNames(arr) {
   }
   return newArray;
 }
-//const names = ["Hadi", "Olga", "Nancy", "Ahmad", "Ali"];
 
-console.log(names);
-console.log(reverseNames(names));
+console.log(names1);
+console.log(reverseNames(names1));
