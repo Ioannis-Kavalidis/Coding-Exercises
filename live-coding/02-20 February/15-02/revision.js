@@ -91,7 +91,6 @@ console.log(chr1.charAt(4)); // a
 // Array.split()
 // Array.join()
 // Array.reverse()
-
 // Array.concat() merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 // Callback functions:
 // Array.filter()   method creates a new array with all elements that pass the test implemented by the provided function.
@@ -113,7 +112,7 @@ console.log(found);
 const array1 = [1, 4, 9, 16];
 const map1 = array1.map(x => x * 2);
 console.log(map1);
-// forEach() method executes a provided function once for each array element.
+// forEach() method executes a provided function once for each array element (splitting all elements of an array one at a time)
 const array1 = ["a", "b", "c"];
 array1.forEach(element => console.log(element));
 console.log("xxxxssss");
@@ -146,12 +145,26 @@ let countedNames = names.reduce(function(allNames, name) {
   return allNames;
 }, {});
 
+//  Object example
+const person = {
+  name: "Zain",
+  age: 20,
+  birthYear: 2000,
+  print: function() {
+    // method
+    console.log(`this user ${person.name} is born in ${person.birthYear}`);
+  },
+  old: () => {
+    return 2020 - person.birthYear;
+  }
+};
 // using loop to have all properties when you print out with for in // accessing all properties of the object
-for (let prop in car) {
-  console.log(`car.${prop} : ${car[prop]} `);
+for (let prop in person) {
+  console.log(`car.${prop} : ${person[prop]} `);
 }
-// Object entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs,
-// in the same order as that provided by a for in loop(The only important difference is that a for in loop enumerates properties in the prototype chain as well).
+// Object entries() method returns the keys and the values with for of // accessing properties of the object individually.
+// (returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for in loop
+// The only important difference is that a for in loop enumerates properties in the prototype chain as well..
 const object1 = {
   a: "somestring",
   b: 42
@@ -177,3 +190,32 @@ const returnedTarget = Object.assign(target, source);
 
 console.log(target); // expected output: Object { a: 1, b: 4, c: 5 }
 console.log(returnedTarget); // expected output: Object { a: 1, b: 4, c: 5 }
+
+// Object.defineProperty()  defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
+// Object.defineProperties() method defines new or modifies existing properties directly on an object, returning the object.
+// Object.getOwnPropertyNames() method returns an array of all properties (including non-enumerable properties except for those which use Symbol)
+// found directly in a given object.
+const object2 = {
+  a: 1,
+  b: 2,
+  c: 3
+};
+console.log(Object.getOwnPropertyNames(object2)); // expected output: Array ["a", "b", "c"]
+
+// Object.prototype.hasOwnProperty()  ,  checks if the property exists for the variable returns true or false
+const person = {
+  hight: 177,
+  age: 38,
+  city: "London"
+};
+console.log(person.hasOwnProperty("age"));
+
+// this , it refers to the object inside the function
+// Primitives (string, number, boolean) / Simple values are always clones (clones save their values, not changing them)
+// Objects are references by default: arrays, object and functions (with reference, it modifies also the values of clone and source)
+// shallow copy using ... spread operator
+// shallow copy using concat
+// shallow copy using slice()
+// shallow copy using .assign()
+// recursion , functions that call themselves and then stop calling themselves
+// deep copy using recursion

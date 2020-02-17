@@ -40,6 +40,7 @@ let newArr = names; // reference, it modifies also the values of clone and sourc
 
 newArr[1] = "New";
 console.log(names);
+console.log("xxxxxsssss");
 
 const car = {
   name: "Ford",
@@ -102,7 +103,8 @@ console.log(console);
 
 // # objects-ex
 
-// 1. Check if a number is within a given range. Write a program that checks if a number is within the range of an object's min and max properties. Assume min <= max is always true.
+// 1. Check if a number is within a given range. Write a program that checks if a number is within the range of an object's min and max properties.
+// Assume min <= max is always true.
 
 // Examples:
 
@@ -112,7 +114,7 @@ console.log(console);
 // 5, { min: 5, max: 5 }) ➞ true
 let objR = { min: 0, max: 5 };
 function inside(num, obj) {
-  return num >= obj.min && num <= obj.max;
+  return num >= objR.min && num <= objR.max;
 }
 console.log(inside(6, { min: 0, max: 5 }));
 console.log(inside(4, objR));
@@ -161,12 +163,11 @@ console.log("set");
 // {} ➞ true
 // {a: 1} ➞ false
 
-function isEmpty2(obj) {
-  return Object.keys(obj.length == 0);
+function isEmpty(obj) {
+  return Object.keys(obj).length == 0;
 }
-
-console.log(isEmpty2({}));
-console.log(isEmpty2({ a: 1 }));
+console.log(isEmpty({}));
+console.log(isEmpty({ 1: 333 }));
 
 function isEmpty(obj) {
   for (let key in obj) {
@@ -178,7 +179,8 @@ function isEmpty(obj) {
 console.log(isEmpty({}));
 console.log(isEmpty({ a: 1 }));
 console.log("vet");
-// 4. Free Shipping. Create a function that determines whether an online order should get free shipping. An order gets free shipping if the total cost of items exceeds €50.
+// 4. Free Shipping. Create a function that determines whether an online order should get free shipping.
+// An order gets free shipping if the total cost of items exceeds €50.
 
 // Examples:
 
@@ -298,7 +300,7 @@ const person1 = {
     console.log(`${this.name} is a ${this.age} year old in ${this.gender}.`);
   }
 };
-
+console.log("zet");
 for (let prop in person1) {
   console.log(`${prop} : ${person1[prop]} `);
 }

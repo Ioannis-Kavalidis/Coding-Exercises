@@ -79,66 +79,21 @@ console.log(arr[2]["sum"]());
 // Expected Output:
 // {"John": name, "teacher": job}
 
-let person = {
-  name: "John",
-  job: "teacher"
-};
-
-function keysToValue(obj) {
-  const keyValuesPair = Object.entries(obj); // Object.entries() method takes an object and make it an array
-  console.log(keyValuesPair);
-  let reverse = [];
-  for (let i = 0; i < keyValuesPair.length; i++) {
-    reverse.push(keyValuesPair[i].reverse());
-  }
-  return Object.fromEntries(reverse); // fromEntries() method takes an array and make it an object
-}
-console.log(keysToValue(person));
-
-// function zodiacName(name, day, month, year) {
-//     const zodiac = {
-//       name: name,
-//       day: day,
-//       month: month,
-//       year: year,
-//       output: function() {
-//         return `${name} you are a ${sign()}`;
-//       }
-//     };
-
-//     let monthPlusDay = month + day;
-//     let sign = () => {
-//       if (monthPlusDay >= "0120" && monthPlusDay <= "0218") {
-//         return `aquarius`;
-//       } else if (monthPlusDay >= "0219" && monthPlusDay <= "0320") {
-//         return `pishes`;
-//       } else if (monthPlusDay >= "0321" && monthPlusDay <= "04190") {
-//         return `aries`;
-//       } else if (monthPlusDay >= "0420" && monthPlusDay <= "0520") {
-//         return `taurus`;
-//       } else if (monthPlusDay >= "0521" && monthPlusDay <= "0620") {
-//         return `gemini`;
-//       } else if (monthPlusDay >= "0621" && monthPlusDay <= "0722") {
-//         return `cancer`;
-//       } else if (monthPlusDay >= "0723" && monthPlusDay <= "0822") {
-//         return `leo`;
-//       } else if (monthPlusDay >= "0823" && monthPlusDay <= "0922") {
-//         return `virgo`;
-//       } else if (monthPlusDay >= "0923" && monthPlusDay <= "01022") {
-//         return `libra`;
-//       } else if (monthPlusDay >= "1023" && monthPlusDay <= "1121") {
-//         return `scorpio`;
-//       } else if (monthPlusDay >= "1122" && monthPlusDay <= "1221") {
-//         return `sagittarius`;
-//       } else if (monthPlusDay >= "1222" || monthPlusDay <= "0119") {
-//         return `capricorn`;
-//       } else {
-//         return `Not a valid date to assign a zodiac sign`;
-//       }
-//     };
-//     return zodiac.output();
+// does not work tghsi belwo function, check it out later
+// let person = {
+//   name: "Ali",
+//   job: "teacher"
+// };
+// function keysToValue(obj) {
+//   const keysValuesPair = Object.entries(obj);
+//   console.log(keysValuesPair);
+//   let reversArr = [];
+//   for (let i = 0; i < keysValuesPair.length; i++) {
+//     reversArr.push(keysValuesPair[i].reverse());
 //   }
-//   console.log(zodiacName("Hadi", "05", "01", "1983"));
+//   return Object.fromEntries(reversArr);
+// }
+// console.log(keysToValue(person));
 
 function getZodiac(name, day, month, year) {
   const myZodiac = {

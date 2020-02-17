@@ -141,19 +141,12 @@ let person2 = {
   firstName: "Ali",
   job: "painter",
   age: 20,
-  city: "Berlin"
-  //   //   print: function() {
-  //   //     console.log(
-  //   //       `${person2.firstName} is a ${person2.age} year old in ${person2.city}.`
-  //   //     );
-  //   //   }
-};
-
-// person2.print();
-
-person2.printOut = () => {
+  city: "Berlin",
+  printOut = () => {
   return `${person2.firstName} is a ${person2.age} year old in ${person2.city}.`;
+}
 };
+
 console.log(person2.printOut());
 
 // Object.defineProperty()

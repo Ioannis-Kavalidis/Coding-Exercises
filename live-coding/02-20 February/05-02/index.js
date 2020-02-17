@@ -116,31 +116,43 @@ console.log(fun2({ firstName: "Eli" }, { lastName: "Nelli" }));
 // console.log(zodiacSign);
 
 //3rd soluton the best of all
-const zodiacName1 = [
-  "Capricorn",
-  "Aquarius",
-  "Pisces",
-  "Aries",
-  "Taurus",
-  "Gemini",
-  "Cancer",
-  "Leo",
-  "Virgo",
-  "Libra",
-  "Scorpio",
-  "Sagittarius"
-];
 
-var lastDayOfSign = [19, 18, 20, 19, 20, 20, 22, 22, 22, 22, 21, 21];
+function zodiacName1(name, day, month, year) {
+  const zodiac = {
+    name: name,
+    day: day,
+    month: month,
+    year: year,
+    output: function() {
+      return `${name} you are a ${sign()}`;
+    }
+  };
+  const zodiacName2 = [
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius"
+  ];
 
-if (day > lastDayOfSign[month]) {
-  return zodiacName1[month + 1];
-} else {
-  return zodiacName1[month];
+  var lastDayOfSign = [19, 18, 20, 19, 20, 20, 22, 22, 22, 22, 21, 21];
+
+  if (day > lastDayOfSign[month]) {
+    return zodiacName1[month + 1];
+  } else {
+    return zodiacName1[month];
+  }
 }
-console.log();
+console.log(zodiacName1("Hadi", "05", "01", "1983"));
 
-//1st silution not that good
+//1st solution not that good
 function zodiacName(name, day, month, year) {
   const zodiac = {
     name: name,
@@ -248,7 +260,7 @@ function getZodiac(name, days, months, year) {
     month: months,
     year: year,
     output: function() {
-      zodiacs = Object.entries(zodiacss);
+      zodiacs = Object.entries(zodiacs);
       let combinedMonthAndDay = myZodiac.month + myZodiac.day;
       if (
         combinedMonthAndDay >= zodiacs[myZodiac.month][1].start &&

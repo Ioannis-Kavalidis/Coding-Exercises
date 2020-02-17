@@ -12,16 +12,17 @@ for (i = 0; i < arr.length; i++) {
     console.log(arr[i][j] + " array");
   }
 }
-console.log("mmm");
+console.log("xxxxssss");
 
 let arrayNew = [];
 
-for (i = 0; i <= 5; i++) {
+for (i = 0; i <= 3; i++) {
   for (j = 0; j <= 2; j++) {
     arrayNew.push([i, j, i, 44]);
   }
 }
 console.log(arrayNew);
+console.log("xxxxssss");
 
 arr.forEach(array => array.forEach(element => console.log(element))); // callback function forEach() which is splitting all elements of an array one at a time
 
@@ -40,7 +41,9 @@ for (let i = 0; i < family.length; i++) {
 }
 
 family.forEach(index => index.forEach(element => console.log(element))); // new and simpler way of doing things
-// foreach() and for
+console.log("xxxxsss");
+
+// foreach() and for of
 let pets = [
   ["Chan", 7, "Pitbull"],
   ["Son", 4, "Maddog"]

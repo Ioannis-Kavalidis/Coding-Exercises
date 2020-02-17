@@ -374,4 +374,4 @@ function titleCase(str) {
   return str.join(" ");
 }
 console.log(titleCase("I am a little tea pot"));
->>>>>>> fa08da431a0c05ca6004b93ecfc22215f89afabb
+
