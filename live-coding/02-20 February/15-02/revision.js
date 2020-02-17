@@ -59,7 +59,7 @@ console.log(Math.max(x, z, q, s, 101));
 // Math.min()
 console.log(Math.min(4, 5, 88, 0.2, 200, 4));
 //Math.random
-console.log(Math.floor(Math.random() * 100) + 1);
+console.log(Math.floor(Math.random() * 10) + 1); // random number form 0 to 10
 // toFixed()
 let numObj = 12345.6789;
 numObj.toFixed();
@@ -104,11 +104,26 @@ const words = [
 ];
 const result = words.filter(word => word.length > 6);
 console.log(result);
+
+// Array.sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending,
+// built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+const months = ["March", "Jan", "Feb", "Dec"];
+months.sort();
+console.log(months); // expected output: Array ["Dec", "Feb", "Jan", "March"]
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1); // expected output: Array [1, 100000, 21, 30, 4]
+// indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+const beasts = ["ant", "bison", "camel", "duck", "bison"];
+console.log(beasts.indexOf("bison")); // expected output: 1
+// start from index 2
+console.log(beasts.indexOf("bison", 2)); // expected output: 4
+console.log(beasts.indexOf("giraffe")); // expected output: -1
 // Array.find()   method returns the value of the first element in the provided array that satisfies the provided testing function.
 const array1 = [5, 12, 8, 130, 44];
 const found = array1.find(element => element > 10);
 console.log(found);
-//// Array.map()    creates a new array populated with the results of calling a provided function on every element in the calling array.
+// Array.map()    creates a new array populated with the results of calling a provided function on every element in the calling array.
 const array1 = [1, 4, 9, 16];
 const map1 = array1.map(x => x * 2);
 console.log(map1);
@@ -118,16 +133,10 @@ array1.forEach(element => console.log(element));
 console.log("xxxxssss");
 // Array.reduce()   method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
 const array1 = [1, 2, 3, 4];
-const reducer = (accumulator, currentValue) => accumulator + currentValue;
-
-// 1 + 2 + 3 + 4
-console.log(array1.reduce(reducer));
-// expected output: 10
-
+const reducer = (accumulator, currentValue) => accumulator + currentValue; // 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer)); // expected output: 10
 // 5 + 1 + 2 + 3 + 4
-console.log(array1.reduce(reducer, 5));
-// expected output: 15
-
+console.log(array1.reduce(reducer, 5)); // expected output: 15
 //Sum all the values of an array
 let total = [0, 1, 2, 3].reduce(
   (accumulator, currentValue) => accumulator + currentValue,
@@ -219,3 +228,60 @@ console.log(person.hasOwnProperty("age"));
 // shallow copy using .assign()
 // recursion , functions that call themselves and then stop calling themselves
 // deep copy using recursion
+// constructor()
+// classes
+class Animals {
+  // setting up my constructor
+  constructor(_kind, _hometown) {
+    // * 1st way is to have the parameters here, no need to pass on always the values
+    // it uses the underline score always
+    this.kind = _kind;
+    this.hometown = _hometown;
+  }
+  // instant method
+  display() {
+    console.log(`It is very cute ${this.kind}, and lives in ${this.hometown}`);
+  }
+}
+let casper = new Animals("Dog", "Athens");
+console.log(casper.kind);
+casper.display();
+let sofi = new Animals("Fish", "Berlin");
+let mary = new Animals("Cat", "Tokyo");
+console.log(sofi);
+
+// extends  and super()
+class Person2 {
+  constructor(_name, _age) {
+    this.name = _name;
+    this.age = _age;
+  }
+  display() {
+    console.log(`hi ${this.name}`);
+  }
+}
+// extends  and super()
+
+class Kid extends Person2 {
+  constructor(_name, _age, _height) {
+    super(_name, _age);
+    this.height = _height;
+  }
+  show() {
+    return `${this.name} is ${this.age} years old....`;
+  }
+}
+let kain = new Kid("kain", 12);
+kain.display();
+console.log(kain.show());
+// `try { ... }  /  catch (err) { ... }`  / throw ""  /  finally{}
+let userName = "";
+try {
+  console.log("Hi his is trying phase");
+  //cool();
+  if (userName == "") throw " Sorry something went wrong ";
+} catch (err) {
+  console.log("this error is " + err);
+} finally {
+  console.log("This will always run");
+}

@@ -6,7 +6,6 @@ function fun(num, { name }) {
 }
 fun(22, { name: "Ali" });
 
-fun(22, { name: "Ali" });
 const userData = {
   firstName: "Hadi",
   lastName: "Nsreeny",
@@ -61,7 +60,7 @@ sean.printOut();
 class Animals {
   // setting up my constructor
   constructor(_kind, _hometown) {
-    // * 1st way is ot have the parameters here, no need to pass on always the values
+    // * 1st way is to have the parameters here, no need to pass on always the values
     // it uses the underline score always
     this.kind = _kind;
     this.hometown = _hometown;
