@@ -1,7 +1,7 @@
 //const arr = ["😎", "💪🏻", "😇"];
 // <array name> = [<value 1>, <value 2>, ...]
 
-let arrStr = ["hi", "text", "text"]; // 1st way
+let arrStr = ["hi", "text", "text"]; //  1st way
 console.log(arrStr);
 let arrInt;
 arrInt = []; // 2nd way
