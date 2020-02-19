@@ -3,7 +3,7 @@
 //     return x+y;
 // }
 // Functions as values
-// 1- const <function name> = function(<parameters>){ ... }
+// 1- const <function name> = function(<parameters>) { ... }
 
 const sum1 = function(x, y) {
   return x + y;
