@@ -73,7 +73,7 @@ const fun = (x, y) => {
 };
 
 const fun2 = (x, y) => {
-  return { ...x, ...y }; // with ....spread operator
+  return { ...x, ...y }; // with ...spread operator
 };
 
 const o1 = {
