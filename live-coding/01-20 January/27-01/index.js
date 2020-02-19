@@ -68,7 +68,7 @@ function pigLatin1(parameter) {
     const newString = remainder + firstCharacter + "ay"; // add first character and ay at the end of the remainder (round 1: A + t s + c + ay) [round 2: r e + a + a y]
     translation.push(newString);
   }
-  let result = translation.join(" "); // join array (round 1: Atscay) [round 2: areway reaay]
+  let result = translation.join(" "); //  join array (round 1: Atscay) [round 2: areway reaay]
   return result;
 }
 const stringPig = "Cats are great pets";
