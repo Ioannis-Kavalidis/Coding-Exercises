@@ -92,7 +92,7 @@ if (
   console.log(true);
 }
 
-// Declare the variables a, b and c, and give them number values.
+// Declare the variables a, b and c, and give them number values
 // Check which one out of the three variables has the largest value and print it to the console.
 // Then change the values of the variables to see if your conditional still works.
 let a, b, c;
