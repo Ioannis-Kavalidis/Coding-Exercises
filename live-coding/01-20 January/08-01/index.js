@@ -24,7 +24,7 @@ function sum() {
   console.log(local);
 }
 sum();
-//console.log(local); // not there 😋
+//console.log(local); // hey it is not there 😋
 
 // Conditional assignment with the ternary operator
 let kid = 2;
