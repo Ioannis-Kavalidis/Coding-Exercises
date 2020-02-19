@@ -22,7 +22,7 @@ let kid = 22;
 kid > 16 ? console.log("Go Party 😎") : console.log("Stay Home 🤨");
 let drive = 55;
 drive > 18 ? console.log("Yeah drive now 💪🏻") : console.log("Nope sorry");
-//.length
+// .length
 
 let name = "hadi";
 console.log(typeof name); // will print the type of var name
