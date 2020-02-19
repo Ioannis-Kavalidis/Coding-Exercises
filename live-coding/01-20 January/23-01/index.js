@@ -13,7 +13,7 @@ a--; // a = a - 1  a -= 1 (all the same )
 let str = "Hi";
 str += " how are you";
 console.log(str);
-//function <name>(<parameters>){ ... }
+//function <name>(<parameters>) { ... }
 function sum(x, y) {
   let z = x + y;
   return z;
