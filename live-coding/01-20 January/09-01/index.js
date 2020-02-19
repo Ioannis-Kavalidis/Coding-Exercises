@@ -23,7 +23,7 @@ console.log(str1.toUpperCase());
 //Declare a variable named speedCheck.
 //If speedlimit is 50km/h, and your speed is above that,
 // print ‘you’re going too fast!’.
-//If speed is lower than 50km/h, print ‘You’re driving below the speed limit, Oma’.
+//If speed is lower than 50km/h, print ‘You’re driving below the speed limit, Oma’
 let speedCheck = 40;
 let speedLimit = 50;
 console.log(
