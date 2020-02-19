@@ -3,7 +3,7 @@ function display(str) {
   console.log(str);
 }
 display("Hadi");
-// Array.isArray(arr)  // to check
+// Array.isArray(arr)   // to check
 const names = ["Hadi", "Olga", "Nancy", "Ahmad", "Ali"];
 let x = 1;
 console.log(Array.isArray(names));
