@@ -33,7 +33,7 @@ userData.fullName; // getting new data
 // constructor()
 
 function Person(name, age, activities) {
-  // pascal method name the constructor function , always begin with capital P, constructor creates objects
+  // pascal method name the constructor function, always begin with capital P, constructor creates objects
   this.name = name;
   this.age = age;
   this.activities = activities;
