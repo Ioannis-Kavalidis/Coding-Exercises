@@ -25,7 +25,7 @@ const outerFunction = (x, y) => {
 
 console.log(outerFunction(3, 4));
 
-// closure, it safeguards the value of a global variable
+// closure,  it safeguards the value of a global variable
 var number = 10;
 function fun() {
   return number + number;
