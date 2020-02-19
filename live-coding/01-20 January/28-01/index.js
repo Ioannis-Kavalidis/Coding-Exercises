@@ -8,7 +8,7 @@ function checkStr(string) {
 checkStr("Hi my name is HADI");
 checkStr("I like JavaScript");
 
-// Create a function that calculates the user age e.g. 2000 -> 20.
+// Create a function that calculates the user age e.g. 2000 -> 20
 function age(num) {
   let year = new Date().getFullYear();
   let userAge = year - num;
