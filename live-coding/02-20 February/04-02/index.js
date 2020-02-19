@@ -27,7 +27,7 @@ const object = {
   arr: [1, 2, 3, 4, 5]
 };
 
-// create an empty object and accessing properties with bracket notation  , assign new properties with with bracket notation
+// create an empty object and accessing properties with bracket notation, assign new properties with with bracket notation
 const car = {};
 car["name"] = "Ford";
 console.log(car);
@@ -65,7 +65,7 @@ const person = {
   }
 };
 
-// Object.keys , prints out the key names with a string
+// Object.keys, prints out the key names with a string
 
 console.log(Object.keys(person));
 
