@@ -50,7 +50,7 @@ const newObject = car;
 newObject.name = "BMW";
 console.log(car.name);
 
-// shallow copy using ... spread operator
+// shallow copy using ...spread operator
 let namesArr = ["Ali", "Olga"];
 let newNamesArr = [...namesArr];
 newNamesArr[0] = "Nancy";
