@@ -4,7 +4,7 @@ Move the first letter of each word to the end of the word.
 Add “ay” to the end of the word.
 Words starting with a vowel (A, E, I, O, U) append “way” to the end instead.
 Extra Practice
-Preserve proper capitalization as in the examples below.
+Preserve proper capitalization as in the examples below
 Examples:
 pigLatin(“Cats are great pets.“) ➞ “Atscay areway reatgay etspay.”
 pigLatin(“Tom got a small piece of pie.“) ➞ “Omtay otgay away allsmay iecepay ofway iepay.”
