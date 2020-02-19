@@ -75,17 +75,16 @@ console.log(Object.entries(myObj));
 // ["tea", "coffee", "milk"];
 // ```
 
-const array = ["coffee", "tea", "juice"];
-array.pop(); // Remove  the lastItem
-array.push("milk"); // adding last item
-
-let swapArray = function(arr, indexA, indexB) {
-  let temp = arr[indexA];
-  arr[indexA] = arr[indexB];
-  arr[indexB] = temp;
-};
-console.log(array);
-
+const arr = ["coffee", "tea", "juice"];
+arr.pop(); // Remove  the lastItem
+arr.push("milk"); // adding last item
+//Destructuring the array with declaring a function to swap the arr elements by passing the arr indexes in array parameter
+function swap(array) {
+  [array[0], array[1]] = [array[1], array[0]];
+  return array;
+}
+console.log(swap(arr));
+m;
 // ##### 2. Create Grid (Optional)
 
 // - Create a function called "createGrid", which returns a grid of a 2D array by accepting two arguments: `size` (which determines the number of nested arrays and the number of elements in each nested array)
@@ -111,7 +110,7 @@ function createGrid(size, char) {
   let arr = [];
   for (let i = 0; i < size; i++) {
     arr.push([]); //  Creates an empty line
-    arr[i].push(new Array(size)); // Adds to the empty line:
+    arr[i].push(new Array(size)); // Adds to the empty line
 
     for (let j = 0; j < size; j++) {
       arr[i][j] = char;
@@ -315,3 +314,9 @@ function validPin(pin) {
 }
 
 console.log(validPin("1222"));
+
+// Number three:
+// Find 3 exercises that you have did in 3 ways, or do 3 exercises in 3 ways  if you haven’t did that yet
+// Create 3 repository’s (each exercise get one repo).
+// Add 3 branches in every repo (each branch has a different solution).
+// Upload 3 photos (one photo to each branch) to your README.md showing your code and the console part, explain your steps and links to your resources (mdn or so)
