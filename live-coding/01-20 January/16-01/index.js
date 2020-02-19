@@ -78,7 +78,7 @@ for (let i = 1; i <= 3; i++) {
 console.log("Hadi \n".repeat(2));
 console.log("xxxxxxxsssss");
 
-// Addition. Write a program to add up the numbers 1 to 20.
+// Addition. Write a program to add up the numbers 1 to 20
 
 let counterSum = 0;
 for (let i = 1; i <= 10; i++) {
