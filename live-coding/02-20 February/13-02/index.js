@@ -31,7 +31,7 @@ for (let i = 0; i < 3; i++) {
 // print out after some seconds
 // const timerPrint = setTimeout(() => console.log("Hi I am JS"), 5000);
 
-// 1. Exercise: Fido says...
+// 1. Exercise: Fido says....
 // In the following code, we want fido to bark. Instead, we get an error. Why?
 
 // class Dog {
