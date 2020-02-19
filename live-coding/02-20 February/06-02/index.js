@@ -52,7 +52,7 @@ function newUser(fName, lName, age, hobbies) {
   return result; // return outer function
 }
 
-// console.log(newUser("Ali", "Stern", 22, "dancing")); // function call
+// console.log(newUser("Ali", "Stern", 22, "dancing"));   // function call
 let x = newUser("Ali", "Stern", 22, "dancing"); // x returns an object
 console.log(x.printOut());
 
