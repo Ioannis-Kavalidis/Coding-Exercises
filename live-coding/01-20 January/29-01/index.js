@@ -11,9 +11,9 @@ const emptySpaces = str => {
 console.log(emptySpaces("Hi I am"));
 // Create a function that will receive a (user name , salary and kid’s names)
 // If the user has one kid subtract 30% taxes from the salary
-// For two kids subtract 25% and 20% for more than two.
+// For two kids subtract 25% and 20% for more than two
 // If the user has no kids the taxes will be 55%
-// Print out the result in a good formated way.
+// Print out the result in a good formated way
 const salaryCalculator = (userName, salary, ...args) => {
   let thirtyPercent = 0.3;
   let twentyFivePercent = 0.25;
