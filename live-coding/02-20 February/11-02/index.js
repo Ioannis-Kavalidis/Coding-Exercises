@@ -114,6 +114,7 @@ const object = {
 console.log(firstName);
 
 // Destructuring assignment
+
 // Extracting values from arrays: Array destructuring assignment
 
 // Extracting values from objects: Object destructuring assignment
