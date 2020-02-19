@@ -1,4 +1,4 @@
-//Declare two variables "a" with the value of true and "b" with the value of false.
+//Declare two variables "a" with the value of true and "b" with the value of false
 
 const a = true;
 b = false;
