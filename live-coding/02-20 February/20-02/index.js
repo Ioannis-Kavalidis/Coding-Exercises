@@ -102,7 +102,7 @@ console.log(array.some(even));
 
 /* create a function called verbing. It should take a single argument, a string. 
 If its length is at least 3, it should add 'ing' to its end, unless it already ends in 'ing', in which case it should add 'ly' instead. 
-If the string length is less than 3, it should leave it unchanged. 
+If the string length is less than 3, it should leave it unchanged
 
 Examples:
 
@@ -122,3 +122,55 @@ function verbing(word) {
 console.log(verbing("swim"));
 console.log(verbing("swimming"));
 console.log(verbing("go"));
+
+function multiplier(num) {
+  // outer function
+  return x => x * num; // inner function
+}
+const times = multiplier(2)(5); // call first the outer function and then the inner one
+console.log(times);
+
+// Write a function that accepts several parameters and calculates the number of money that will have been saved as pension until a person retires.
+// The function should be self invoked and should have the following parameters:
+// The current age of the person // e.g. 40
+// The retirement age of the person // e.g. 60
+// The monthly wage the person earns // e.g. 1000
+// The percentage (as integer) that the person saves each month // e.g. 10%
+// If the person has already retired then the message ‘You’re already retired!’ should be printed.
+// If not, then the program should calculate how many years remain until the person retires, the monthly income and take a specific percent of this income every month as saved money.
+// Example: A lady is 40 years old, she retires at 65, she earns $2000 per month and she saves the 5% of it. How much money will she have saved until she retires?
+// Output: $30000
+
+const moneySavedForPension = ((
+  currentAge,
+  retirementAge,
+  monthlyWage,
+  percentSavingPerMonth
+) => {
+  let yearsForPension = retirementAge - currentAge;
+  if (currentAge > retirementAge) {
+    console.log(`You’re already retired!`);
+  } else if (currentAge < retirementAge) {
+    savePercentage = percentSavingPerMonth * 0.01;
+    let moneySaved = yearsForPension * 12 * monthlyWage * savePercentage;
+    console.log(
+      `You need ${yearsForPension} years more with your current monthly income of ${monthlyWage}$ and a savings rate of ${percentSavingPerMonth}% in order for you to save ${moneySaved}`
+    );
+  }
+})(40, 65, 2000, 5);
+
+// startsWith();
+
+let text = "Hi I am John";
+console.log(text.startsWith("Hi"));
+
+// endsWith()
+
+console.log(text.endsWith("am", 7));
+console.log(text.charAt(3));
+
+// Count occurrences like the example below
+
+// countLetters(“tree”) -> expected output: t: 1, r: 1, e: 2
+
+// console.log(countLetters("tree"));
