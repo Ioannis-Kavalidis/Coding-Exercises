@@ -13,7 +13,7 @@ function capitalizeFirstLetter(str) {
   str = str.split(" ");
   //iterating over all elements in the array
   for (let i = 0; i < str.length; i++) {
-    //converting the first char to upper case &concatenating to the rest chars
+    // converting the first char to upper case &concatenating to the rest chars
     str[i] = str[i].charAt(0).toUpperCase(str[i]) + str[i].substring(1);
   }
   return str.join(" ");

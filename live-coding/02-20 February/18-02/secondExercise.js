@@ -22,7 +22,8 @@ function factorial1(num) {
 }
 console.log(factorial1(5));
 
-// with a FOR loop
+// with a FOR l
+oop;
 
 function factorial2(num) {
   if (num === 0 || num === 1) return 1;
