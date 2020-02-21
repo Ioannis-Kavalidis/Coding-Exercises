@@ -136,4 +136,4 @@ function wordStartsWith2(str, word) {
     return `It is false`;
   }
 }
-console.log(wordStartsWith2("bu", "batton"));
+console.log(wordStartsWith2("bu", "botton"));
