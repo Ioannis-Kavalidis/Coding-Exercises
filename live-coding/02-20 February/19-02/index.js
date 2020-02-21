@@ -72,7 +72,7 @@ for (let i in yx) {
   console.log(yx[i]);
 }
 
-// 1st solution
+// 1st solution for loop
 function countOccurrences(str, letter) {
   let counter = 0;
   for (let i = 0; i < str.length; i++) {
@@ -83,25 +83,14 @@ function countOccurrences(str, letter) {
   return counter;
 }
 console.log(countOccurrences("this is a string", "i"));
-// 2nd solution
+
+// 2nd solution with split()
 
 const countOccurrences1 = (string, letter) => {
   let letterOccurrences = string.split(letter).length - 1;
   return letterOccurrences;
 };
 console.log(countOccurrences1("this is a string", "i"));
-
-// 3nd solution
-const countOccurrences2 = (string, letter) => {
-  let count = 0;
-  let position = string.indexOf(letter);
-  while (position !== -1) {
-    count++;
-    position = string.indexOf(letter, position + 1);
-  }
-  return count;
-};
-console.log(countOccurrences2("this is a string", "i"));
 
 // Create a function that looks inside a givin string if it has the word (JavaScript)and if so print "I know it's crazy 😉".
 
