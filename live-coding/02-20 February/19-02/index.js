@@ -43,7 +43,7 @@ for (let e of iterator) {
 // [1, 'b']
 // [2, 'c']
 
-// forEach() method executes a provided function once for each array element.
+// forEach() method executes a provided function once for each array element
 const array1 = ["a", "b", "c"];
 
 array1.forEach(element => console.log(element));
