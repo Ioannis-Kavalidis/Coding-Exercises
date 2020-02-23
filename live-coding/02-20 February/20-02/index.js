@@ -32,7 +32,7 @@ console.log(factorial2(4));
 
 // 5. FixStart
 // Create a function called fixStart. It should take a single argument, a string, and return a version where
-//all occurences of its first character have been replaced with '*', except for the first character itself.
+//all occurences of its first character have been replaced with '*', except for the first character itself
 // Examples:
 // fixStart("babble") -> "ba**le"
 // fixStart("people") -> "peo*le"
