@@ -92,7 +92,7 @@ const countOccurrences1 = (string, letter) => {
 };
 console.log(countOccurrences1("this is a string", "i"));
 
-// Create a function that looks inside a givin string if it has the word (JavaScript)and if so print "I know it's crazy 😉".
+// Create a function that looks inside a givin string if it has the word (JavaScript)
 
 function checkIf(word) {
   let toStr = word.toLowerCase().split(" ");
