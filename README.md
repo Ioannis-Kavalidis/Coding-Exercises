@@ -1,5 +1,9 @@
 # HTML / HTML5
 
+- Multimedia and embedding
+- Tables
+- Forms
+
 # CSS / CSS3
 
 # JavaScript (ES5)
