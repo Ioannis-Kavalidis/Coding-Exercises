@@ -36,3 +36,6 @@ div {
 .div2 {
   background-color: rgba(212, 118, 55, 0.699);
 }
+#required {
+  color: red;
+}
