@@ -26,3 +26,13 @@ td {
 .firstRow {
   color: tomato;
 }
+div {
+  width: 50px;
+  height: 50px;
+}
+.div1 {
+  background-color: rgba(181, 55, 212, 0.699);
+}
+.div2 {
+  background-color: rgba(212, 118, 55, 0.699);
+}
