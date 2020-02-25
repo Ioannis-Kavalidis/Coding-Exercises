@@ -1,0 +1,28 @@
+html {
+  background-color: #deff47;
+}
+
+ul li {
+  color: red;
+}
+table {
+  background-color: lightgreen;
+}
+th {
+  font-size: 22px;
+}
+td {
+  font-size: 18px;
+}
+#name {
+  color: grey;
+}
+#firstRow {
+  color: purple;
+}
+.interest {
+  color: blue;
+}
+.firstRow {
+  color: tomato;
+}
