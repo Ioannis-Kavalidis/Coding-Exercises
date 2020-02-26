@@ -105,8 +105,16 @@ p:last-child {
 p:only-child {
   background-color: darkcyan;
 }
-div a :hover {
+
+.move {
+  width: 100px;
+  height: 40px;
+  background-color: lightblue;
+  border: 2px yellow dotted;
+}
+.move:hover {
   background-color: red;
-  width: 5px;
-  height: 5px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 5px 5px grey;
 }
