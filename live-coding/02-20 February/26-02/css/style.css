@@ -4,7 +4,8 @@
   background-size: cover;
   margin: 0 auto;
 }
-.tokyo-night { */
+*/
+.tokyo-night {
   width: 100px;
   height: 100px;
   border: 2px yellow solid;
@@ -15,18 +16,18 @@ p,
 div {
   color: purple;
 }
-/* .nature {
+.nature {
   width: 200px;
   height: 200px;
   border-radius: 40% 20% 40% 20%;
   border-color: black;
-  border-style: dotted; */
-/* border: 3px black solid;
+  border-style: dotted;
+  border: 3px black solid;
   border-top: 3px red dashed;
   border-bottom: 3px red dashed;
   padding: 10px 10px 20px 10px;
   margin: 100px;
-} */
+}
 .one {
   width: 50px;
   height: 50px;
@@ -43,19 +44,19 @@ div {
   margin-bottom: 30px;
 }
 .three {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: brown;
-    border: 2px black solid;
-    margin-bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: brown;
+  border: 2px black solid;
+  margin-bottom: 30px;
 }
 .four {
-        width: 0;
-        height: 0;
-        border-top: 100px  brown solid;
-        border-left: 100px solid transparent;
-        margin-bottom: 30px;
+  width: 0;
+  height: 0;
+  border-top: 75px brown solid;
+  border-left: 75px solid transparent;
+  margin-bottom: 30px;
 }
 /* .four {
     width: 0;
@@ -67,19 +68,45 @@ div {
 } */
 
 .five {
-    width: 100px;
-    height: 100px;
-    background-color: brown;
-    border: 2px black solid;
-    margin-bottom: 30px;
+  width: 80px;
+  height: 80px;
+  background-color: brown;
+  border: 2px black solid;
+  margin-bottom: 30px;
 }
 .six {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: brown;
-    border: 2px black solid;
-    margin-top: 25px;
-    margin-left: 25px;
-  }
-
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: brown;
+  border: 2px black solid;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.test-box {
+  width: 30%;
+  height: 40px;
+  border: 2px solid black;
+}
+.random-text {
+  letter-spacing: 2px;
+  word-spacing: 20px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+}
+p:last-child {
+  background-color: chocolate;
+}
+p:only-child {
+  background-color: darkcyan;
+}
+div a :hover {
+  background-color: red;
+  width: 5px;
+  height: 5px;
+}
