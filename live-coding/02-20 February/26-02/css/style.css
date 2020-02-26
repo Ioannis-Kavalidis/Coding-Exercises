@@ -1,10 +1,11 @@
-/* body {
-  background-image: url(../img/fruits.jpg);
+body {
+  /* background-image: url(../img/fruits.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
+  background-size: cover; */
+  /* margin: 0 auto; */
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
-*/
+
 .tokyo-night {
   width: 100px;
   height: 100px;
@@ -95,6 +96,7 @@ div {
   text-align: center;
   text-transform: capitalize;
   text-decoration: underline;
+  text-indent: 50px;
 }
 a {
   text-decoration: none;
