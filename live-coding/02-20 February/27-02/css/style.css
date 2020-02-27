@@ -62,3 +62,10 @@ div p {
 div p:hover {
   background-color: lightgray;
 }
+.menu {
+  float: right;
+  margin-top: -40px;
+}
+.title {
+  margin-top: 60px;
+}
