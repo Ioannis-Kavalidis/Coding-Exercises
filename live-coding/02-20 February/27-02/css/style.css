@@ -42,20 +42,25 @@ nav ul li {
   background-color: darkblue;
   box-shadow: 25px 25px 15px grey;
 }
-h1,
-h2 {
+h1 {
   text-align: center;
-}
-h1,
-h2 {
   margin: 20px;
 }
+div h2 {
+  text-align: center;
+  margin: 20px;
+}
+
 .arabic {
   text-align-last: right;
 }
-h1,
-h2,
-p {
-  padding-left: 50px;
-  padding-right: 50px;
+div p {
+  margin: 30px;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+}
+div p:hover {
+  transition: 3s;
+  /* transition: ease-in; */
+  background-color: lightgray;
 }
