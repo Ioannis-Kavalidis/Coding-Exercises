@@ -17,7 +17,7 @@ html {
   /* element,element Selector
   element  AND element 
   */
-  span,div {
+  span, div {
     /* background-color: turquoise; */
   }
   /* element element Selector
