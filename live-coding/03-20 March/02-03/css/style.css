@@ -19,7 +19,11 @@ html {
   */
 span,
 div {
+<<<<<<< HEAD
   background-color: turquoise;
+=======
+  /* background-color: turquoise; */
+>>>>>>> aed2e69f266532a94923d7c7020d439b22f16b23
 }
 /* element element Selector
   element inside element 
@@ -84,7 +88,11 @@ span ~ p {
 a:visited {
   color: pink;
 }
+<<<<<<< HEAD
 /* :focus */
+=======
+/* : */
+>>>>>>> aed2e69f266532a94923d7c7020d439b22f16b23
 input:focus {
   outline: none;
   border: 2px pink solid;
@@ -92,7 +100,10 @@ input:focus {
 }
 input[name="firstName"] + span {
   color: red;
+<<<<<<< HEAD
   background-color: yellow;
+=======
+>>>>>>> aed2e69f266532a94923d7c7020d439b22f16b23
 }
 
 /* :active */
@@ -121,6 +132,7 @@ div[class="text-main"]::before {
   border: 3px black dashed;
 }
 /* :nth-child() */
+<<<<<<< HEAD
 tr:nth-child(2n) {
   background-color: tomato;
 }
@@ -134,3 +146,5 @@ td,
 th {
   border: 2px black solid;
 }
+=======
+>>>>>>> aed2e69f266532a94923d7c7020d439b22f16b23
