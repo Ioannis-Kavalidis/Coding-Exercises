@@ -1,0 +1,171 @@
+html {
+  font-size: 16px;
+  /* margin: 0; */
+  display: block;
+  text-align: center;
+}
+td {
+  width: 70px;
+  height: 70px;
+  border: 2px black solid;
+}
+.empty {
+  border: none;
+  background-color: white;
+}
+td:nth-child(2) {
+  background-color: lightsalmon;
+}
+td:nth-child(1) {
+  background-color: lightblue;
+}
+td:nth-child(4) {
+  background-color: lightgreen;
+}
+td:nth-child(5) {
+  background-color: lightgreen;
+}
+td:nth-child(6) {
+  background-color: lightgreen;
+}
+td:nth-child(7) {
+  background-color: lightgreen;
+}
+td:nth-child(8) {
+  background-color: lightgreen;
+}
+td:nth-child(9) {
+  background-color: lightgreen;
+}
+td:nth-child(10) {
+  background-color: lightgreen;
+}
+td:nth-child(11) {
+  background-color: lightgreen;
+}
+td:nth-child(12) {
+  background-color: lightgreen;
+}
+td:nth-child(18) {
+  background-color: rgb(245, 132, 170);
+}
+td:nth-child(17) {
+  background-color: brown;
+}
+tr:nth-last-child(1) {
+  background-color: lightskyblue;
+}
+tr:nth-last-child(2) {
+  background-color: lightsteelblue;
+}
+.last td:nth-child(n + 2):nth-child(-n + 15) {
+  background-color: lightskyblue;
+}
+.secondtolast td:nth-child(n + 2):nth-child(-n + 15) {
+  background-color: lightsteelblue;
+}
+.first td:nth-child(n + 2):nth-child(-n + 17) {
+  background-color: white;
+}
+.second td:nth-child(n + 3):nth-child(-n + 12) {
+  background-color: white;
+}
+.third td:nth-child(n + 3):nth-child(-n + 12) {
+  background-color: white;
+}
+.second td:nth-child(n + 14):nth-child(-n + 16) {
+  background-color: yellow;
+}
+.third td:nth-child(n + 15):nth-child(-n + 16) {
+  background-color: yellow;
+}
+.fourth td:nth-child(16) {
+  background-color: yellow;
+}
+.second td:nth-child(13) {
+  background-color: rgb(223, 49, 156);
+}
+.third td:nth-child(13) {
+  background-color: pink;
+}
+.fourth td:nth-child(13) {
+  background-color: pink;
+}
+.fifth td:nth-child(n + 13):nth-child(-n + 14) {
+  background-color: pink;
+}
+.sixth td:nth-child(n + 13):nth-child(-n + 15) {
+  background-color: pink;
+}
+.seventh td:nth-child(n + 13):nth-child(-n + 14) {
+  background-color: pink;
+}
+.third td:nth-child(14) {
+  background-color: rgb(223, 49, 156);
+}
+.fourth td:nth-child(n + 14):nth-child(-n + 15) {
+  background-color: rgb(223, 49, 156);
+}
+.fifth td:nth-child(n + 15):nth-child(-n + 16) {
+  background-color: rgb(223, 49, 156);
+}
+.sixth td:nth-child(16) {
+  background-color: rgb(223, 49, 156);
+}
+.seventh td:nth-child(16) {
+  background-color: rgb(245, 132, 170);
+}
+.seventh td:nth-child(15) {
+  background-color: brown;
+}
+.last td:nth-child(15) {
+  background-color: lightskyblue;
+}
+.fourth td:nth-child(3) {
+  background-color: lightgreen;
+}
+.fifth td:nth-child(3) {
+  background-color: lightgreen;
+}
+.sixth td:nth-child(3) {
+  background-color: lightsteelblue;
+}
+.seventh td:nth-child(3) {
+  background-color: lightskyblue;
+}
+.seventh td:nth-child(17) {
+  background-color: lightskyblue;
+}
+.secondtolast td:nth-child(1) {
+  background-color: white;
+}
+.last td:nth-child(1) {
+  background-color: white;
+}
+.seventh td:nth-child(18) {
+  background-color: lightsalmon;
+}
+.secondtolast td:nth-child(17) {
+  background-color: white;
+}
+.secondtolast td:nth-child(18) {
+  background-color: white;
+}
+.last td:nth-child(17) {
+  background-color: white;
+}
+.last td:nth-child(18) {
+  background-color: white;
+}
+.first td:nth-child(8) {
+  background-color: white;
+}
+tr .H {
+  background-color: yellow;
+}
+tr + td {
+  background-color: blue;
+}
+#empty {
+  background-color: white;
+}
