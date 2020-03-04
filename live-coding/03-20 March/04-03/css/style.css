@@ -7,11 +7,21 @@
 /* ::before  Vs :before */
 
 /* ::first-letter (:first-letter) */
+.text::first-letter {
+  color: orangered;
+  font-size: 30px;
+  font-weight: bold;
+}
 
 /* ::placeholder  */
+[type="text"]::placeholder {
+  color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /* display:none vs opacity: 0 */
-
+.tokyo {
+}
 /* vh & vw */
 
 /* visual content like img */
