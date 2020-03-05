@@ -59,5 +59,11 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
 }
+.ex5 {
+  background-image: url(../img/bird.png);
+  background-size: 40rem;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 /* npm live-server */
