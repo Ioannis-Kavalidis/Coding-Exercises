@@ -57,7 +57,7 @@ button {
   border: 2px solid #d6d6d6;
   border-radius: 20px;
 }
-.on-off-inner {
+.on-off-on {
   display: block;
   width: 200%;
   margin-left: -100%;
@@ -68,8 +68,8 @@ button {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.on-off-inner:before,
-.on-off-inner:after {
+.on-off-on:before,
+.on-off-on:after {
   display: block;
   float: left;
   width: 50%;
@@ -82,20 +82,20 @@ button {
   font-weight: bold;
   box-sizing: border-box;
 }
-.on-off-inner:before {
+.on-off-on:before {
   content: "ON";
   padding-left: 10px;
   background-color: #35bcde;
   color: #ffffff;
 }
-.on-off-inner:after {
+.on-off-on:after {
   content: "OFF";
   padding-right: 10px;
   background-color: #eeeeee;
   color: #c7c1c1;
   text-align: right;
 }
-.on-off-switch {
+.on-off-off {
   display: block;
   width: 18px;
   margin: 6px;
@@ -113,9 +113,9 @@ button {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.on-off-checkbox:checked + .on-off-label .on-off-inner {
+.on-off-checkbox:checked + .on-off-label .on-off-on {
   margin-left: 0;
 }
-.on-off-checkbox:checked + .on-off-label .on-off-switch {
+.on-off-checkbox:checked + .on-off-label .on-off-off {
   right: 0px;
 }
