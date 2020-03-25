@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Nice Form Elements</title>
+  </head>
+  <body>
+    <form action="index.php" method="GET" id="userForm">
+      <button onclick="fancy()">Join</button>
+      <input type="email" name="userEmail" id="1" />
+      <input type="password" name="pass" id="2" />
+      <label for="married">Married</label>
+      <input type="checkbox" name="married" id="married" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="4" />
+      <div class="on-off">
+        <input
+          type="checkbox"
+          name="on-off"
+          class="on-off-checkbox"
+          id="switch"
+          checked
+        />
+        <label class="on-off-label" for="switch">
+          <span class="on-off-inner"></span>
+          <span class="on-off-switch"></span>
+        </label>
+      </div>
+
+      <input type="submit" value="send" />
+      <input type="reset" value="clear" onclick="cleanUp()" />
+    </form>
+    <script>
+      const fancy = () => {
+        // userForm.style.backgroundColor = "pink";
+        // userForm.style.color = "blue";
+        userForm.classList.add("coolStyle");
+        event.preventDefault();
+      };
+      const cleanUp = () => {
+        userForm.classList.remove("coolStyle");
+      };
+    </script>
+  </body>
+</html>

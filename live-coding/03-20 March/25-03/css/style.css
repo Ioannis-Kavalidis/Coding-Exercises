@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 2px solid grey;
+  border-radius: 2%;
+  width: 40vw;
+  height: 40vh;
+}
+
+input {
+  width: 30%;
+  border: 2px solid silver;
+  border-radius: 10%;
+}
+
+button {
+  width: 25%;
+  border: 2px solid silver;
+  border-radius: 10%;
+}
+.coolStyle {
+  font-size: 3rem;
+  background-color: violet;
+  color: yellow;
+  border: 4px dashed black;
+}
+
+.on-off {
+  position: relative;
+  width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.on-off-checkbox {
+  display: none;
+}
+.on-off-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #d6d6d6;
+  border-radius: 20px;
+}
+.on-off-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  box-shadow: 0px 0px 3px rgb(50, 50, 50) inset;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.on-off-inner:before,
+.on-off-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.on-off-inner:before {
+  content: "ON";
+  padding-left: 10px;
+  background-color: #35bcde;
+  color: #ffffff;
+}
+.on-off-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: #eeeeee;
+  color: #c7c1c1;
+  text-align: right;
+}
+.on-off-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #65e06b;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 56px;
+  border: 2px solid #d6d6d6;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px rgb(50, 50, 50) inset;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.on-off-checkbox:checked + .on-off-label .on-off-inner {
+  margin-left: 0;
+}
+.on-off-checkbox:checked + .on-off-label .on-off-switch {
+  right: 0px;
+}
