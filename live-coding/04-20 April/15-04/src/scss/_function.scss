@@ -1,15 +1,3 @@
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
-
-@function hsla-str($color) {
-  /* Sass outputs the hue value with 'deg' next to it (example 120deg), and we don't want that. */
-  $hue: (hue($color) / 1deg);
-  /* Sass outputs crazy decimals sometimes, so let's round them. */
-  @return unquote(
-    "hsl(#{round($hue)}, #{round(saturation($color))}, #{round(lightness($color))})"
-  );
-}
-@function rgba-str($color) {
-  @return unquote("rgb(#{red($color)}, #{green($color)}, #{blue($color)})");
-}
