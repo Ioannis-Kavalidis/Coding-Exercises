@@ -25,11 +25,22 @@ const stop = () => {
   header.removeEventListener("mouseleave", whiteBg);
 };
 
-function totalSum() {
-  let firstNum = document.getElementById("firstNumber").value;
-  let secondNum = document.getElementById("secondNumber").value;
-  let sum = parseInt(firstNum) + parseInt(secondNum);
-  sum = document.getElementById("sumResult").value;
+function endResult() {
+  let firstNum = parseFloat(document.getElementById("firstNumber").value);
+  let secondNum = parseFloat(document.getElementById("secondNumber").value);
+  let operation = document.getElementById("options").value;
+  if (operation == "addition") {
+    document.getElementById("result").value = firstNum + secondNum;
+  }
+  if (operation == "subtraction") {
+    document.getElementById("result").value = firstNum - secondNum;
+  }
+  if (operation == "multiplication") {
+    document.getElementById("result").value = firstNum * secondNum;
+  }
+  if (operation == "division") {
+    document.getElementById("result").value = firstNum / secondNum;
+  }
 }
 
 let result = document.querySelector(".result");

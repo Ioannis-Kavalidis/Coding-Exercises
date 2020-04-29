@@ -17,15 +17,22 @@
     <br />
     <div class="container">
       <input type="text" name="num1" id="firstNumber" />
-      <span id="operator">+</span>
+      <span>
+        <select id="options">
+          <option value="addition">&#43;</option>
+          <option value="subtraction">&#8722;</option>
+          <option value="multiplication">&#10006;</option>
+          <option value="division">&#247;</option>
+        </select>
+      </span>
       <input type="text" name="num2" id="secondNumber" />
       <span>=</span>
-      <input type="text" name="sum" id="sumResult" />
+      <input type="text" name="sum" id="result" />
       <input
         type="button"
         name="click"
         value="Display Result"
-        onclick="totalSum()"
+        onclick="endResult()"
       />
     </div>
     <div class="result"></div>
