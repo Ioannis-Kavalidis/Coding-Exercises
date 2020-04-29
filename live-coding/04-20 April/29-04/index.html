@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on DOM</title>
+  </head>
+  <body>
+    <h1>Random Text</h1>
+    <button onclick="stop()">STOP Listening</button>
+    <form action="script.js">
+      <input type="text" name="userName" id="userData" />
+      <input type="submit" value="Send" />
+      <input type="reset" value="Clear" />
+      <button onclick="changeColor()">Change Color</button>
+    </form>
+    <br />
+    <div class="container">
+      <input type="text" name="num1" id="firstNumber" />
+      <span id="operator">+</span>
+      <input type="text" name="num2" id="secondNumber" />
+      <span>=</span>
+      <input type="text" name="sum" id="sumResult" />
+      <input
+        type="button"
+        name="click"
+        value="Display Result"
+        onclick="totalSum()"
+      />
+    </div>
+    <div class="result"></div>
+  </body>
+  <script src="./index.js"></script>
+</html>
