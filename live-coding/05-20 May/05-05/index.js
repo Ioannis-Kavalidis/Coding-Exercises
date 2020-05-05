@@ -14,9 +14,9 @@ let checkPromise = new Promise((resolve, reject) => {
   // resolve illustrates the success part and reject the failure part
   let x = false;
   if (x) {
-    resolve("Everything is well");
+    resolve("everything is cool");
   } else {
-    reject("Sorry but something went wrong");
+    reject("sorry it's not cool");
   }
 });
 
@@ -26,7 +26,7 @@ checkPromise // then and catch are methods
     console.log(`I am then and ${message}`); // then is the resolve from above
   })
   .catch((message) => {
-    console.log(`I am catch.  ${message}`); // catch is the reject from above
+    console.log(`I am catch and  ${message}`); // catch is the reject from above
   });
 
 //
@@ -39,9 +39,9 @@ function delay(ms) {
 }
 
 let ms = 3000;
-delay(ms).then(myFunction());
+delay(ms).then(myFunction);
 
 function myFunction() {
   let text = document.querySelector(".text");
-  text.innerHTML = `It took me ${ms} ms to be done`;
+  text.innerHTML = `It took me ${ms} ms to be done.`;
 }
