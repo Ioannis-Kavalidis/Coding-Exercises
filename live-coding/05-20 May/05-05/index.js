@@ -43,5 +43,5 @@ delay(ms).then(myFunction);
 
 function myFunction() {
   let text = document.querySelector(".text");
-  text.innerHTML = `It took me ${ms} ms to be done.`;
+  text.innerHTML = `It took me ${ms} ms to be done`;
 }
