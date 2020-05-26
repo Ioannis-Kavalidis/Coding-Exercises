@@ -29,3 +29,18 @@ fs.writeFile("new.txt", "This is created file from NodeJs", (error) => {
   console.log("Done!");
 });
 console.log("Hi this is way too fun!");
+
+// exercise
+
+const print = require("./stars");
+const args1 = process.argv.slice(2);
+print(args1[0], args1[1]);
+
+function parseNum(arg) {
+  const number = parseFloat(arg);
+  if (isNaN(number)) {
+    console.log(`Sorry ${arg} is not a number, please try again.`);
+    process.exit();
+  }
+  return number;
+}
