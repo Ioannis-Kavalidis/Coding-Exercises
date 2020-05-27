@@ -16,3 +16,9 @@ fs.copyFile("original.txt", "copyFromOg.txt", (err) => {
 
 const data = fs.readFileSync("longText.txt");
 console.log(data.toString());
+console.log("Done!!!");
+
+fs.open("new.txt", "w", (err, data) => {
+  if (err) throw err;
+  console.log("Great!!!");
+});
