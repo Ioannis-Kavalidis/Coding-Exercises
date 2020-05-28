@@ -10,6 +10,8 @@ if (args.includes("--help")) {
   showHelp();
 }
 
+prepareString();
+
 /*
  in script.js you have function called prepareString. This function should take a string as a parameter, and return it with only the first letter capitalized.
 Example output:
