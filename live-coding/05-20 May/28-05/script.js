@@ -6,5 +6,5 @@ exports.prepareString = () => {
   function capitalizeFirstLetter(str) {
     return str[0].toUpperCase() + str.slice(1).toLowerCase();
   }
-  console.log(capitalizeFirstLetter("BerLiN"));
+  console.log(capitalizeFirstLetter("AtHeNs"));
 };
