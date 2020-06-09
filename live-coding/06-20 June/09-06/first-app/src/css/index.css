@@ -1,0 +1,14 @@
+body {
+  background-color: rgba(36, 36, 77, 0.521);
+  margin: 0 auto;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  white-space: pre;
+}
