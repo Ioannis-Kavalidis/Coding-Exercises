@@ -7,7 +7,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
-  "author": "Ioannis K.",
+  "author": "Ioannis Kavalidis",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.14.1",
