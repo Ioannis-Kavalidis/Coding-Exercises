@@ -16,7 +16,7 @@ class Text extends React.Component {
   render() {
     return (
       <h1>
-        Hi I am {this.props.name} and I am {this.props.age}
+        Hi I am {this.props.name} and I am {this.props.age} years old
       </h1>
     );
   }
