@@ -24,7 +24,7 @@ class Text extends React.Component {
 
 class Hello extends React.Component {
   render() {
-    return <h1>Hi I like React!!!</h1>;
+    return <h1>Hi I like React!</h1>;
   }
 }
 
