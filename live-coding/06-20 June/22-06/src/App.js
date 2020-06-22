@@ -10,7 +10,7 @@ export default class App extends React.Component {
   }
 
   click = () => {
-    this.setState({ username: "Ali" });
+    this.setState({ username: "Sofia" });
   };
 
   componentDidMount() {
