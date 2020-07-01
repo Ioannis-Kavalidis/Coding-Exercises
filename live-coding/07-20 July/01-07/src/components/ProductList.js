@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { addProduct } from "../actions";
 
 import ProductListItem from "./ProductListItem";
 
@@ -14,4 +15,8 @@ class ProductList extends Component {
   }
 }
 
-export default ProductList;
+const mapStoreToProps = (store) => ({
+  items: Object.values(store.products),
+});
+
+export default connect(mapStoreToProps)(ProductList);

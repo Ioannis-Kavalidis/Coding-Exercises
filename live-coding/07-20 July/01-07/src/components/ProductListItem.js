@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { addProduct } from "../actions";
 
 class ProductListItem extends Component {
   render() {
@@ -27,4 +29,10 @@ class ProductListItem extends Component {
     );
   }
 }
-export default ProductListItem;
+
+const mapStoreToProps = (store) => {};
+const mapActionToProps = {
+  addProduct,
+};
+
+export default connect(mapStoreToProps, mapActionToProps)(ProductListItem);
