@@ -11,7 +11,7 @@ class ChildComponent extends Component {
     return (
       <Fragment>
         <h4>I am a chid component</h4>
-        <button onClick={() => changeName("Ali")}>Click me</button>
+        <button onClick={() => changeName("Ali")}>Click Me</button>
         <hr />
         {store.counter}
         <button onClick={() => increment()}>+</button>
