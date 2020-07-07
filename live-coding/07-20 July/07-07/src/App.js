@@ -1,12 +1,14 @@
-import React, { Component, Fragment } from "react";
-//import Info from "./components/Info";
+import React, { Component } from "react";
+import { DataProvider } from "./context/DataContext";
+import Info from "./components/Info";
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
+      <DataProvider>
         <h1>Hey, I am React Context API</h1>
-      </Fragment>
+        <Info />
+      </DataProvider>
     );
   }
 }
