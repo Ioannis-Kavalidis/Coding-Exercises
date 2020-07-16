@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <DataProvider>
-        <h1>Hey, I am React Context API</h1>
+        <h1>Hey, I am REACT Context API</h1>
         <Info />
       </DataProvider>
     );
