@@ -15,12 +15,12 @@ app.use("/admin", (req, res, next) => {
 app
   .get("/", (req, res) => {
     console.log("GET");
-    res.status(200).json({ text: "This was GET req" });
+    res.status(200).json({ text: "This was GET request" });
     //res.end();
   })
   .post("/", (req, res) => {
     console.log("POST");
-    res.status(200).json({ text: "This was POST" });
+    res.status(200).json({ text: "This was POST request" });
   })
   .delete("/", (req, res) => {
     console.log("POST");
