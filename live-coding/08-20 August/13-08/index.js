@@ -11,7 +11,7 @@
 // we have no tables but we call then collections in them we have documents(json like)
 // The name "BSON" is based on the term JSON and stands for "Binary JSON"
 
-// MongoDB today's commands
+// MongoDB commands
 
 // To see all Databases you have
 // show dbs
