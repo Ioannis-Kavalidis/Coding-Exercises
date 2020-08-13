@@ -16,7 +16,7 @@
 // To see all Databases you have
 // show dbs
 
-// To show the current Database you are working with
+// To show the current Databases you are working with
 // db
 
 // Create new DB || Switch DB
@@ -36,7 +36,7 @@
 //   name: 'Ali',
 //   age: 31,
 //   add: 'Berlin',
-//   hopis: ['dance', 'sleep'],
+//   hobbies: ['dance', 'sleep'],
 //   emails: {
 //     private: 'me@mail.co',
 //     work: 'you@mail.com'
