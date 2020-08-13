@@ -59,7 +59,7 @@
 //     data: Date(),
 //   },
 //   {
-//     name: "Zain",
+//     name: "Eric",
 //     age: 3,
 //     add: "Berlin",
 //     data: Date(),
