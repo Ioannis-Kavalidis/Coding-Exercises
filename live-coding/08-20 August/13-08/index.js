@@ -8,7 +8,7 @@
 
 // Not only SQL aka NoSQL
 // Humongous aka mongoDB
-// we have no tables but we call then collections in them we have documents(json like)
+// we have no tables but we call then collections in them we have documents (json alike)
 // The name "BSON" is based on the term JSON and stands for "Binary JSON"
 
 // MongoDB commands
