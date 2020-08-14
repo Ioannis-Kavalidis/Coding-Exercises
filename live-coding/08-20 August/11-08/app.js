@@ -16,7 +16,7 @@ app.use("/admin", (req, res, next) => {
 app
   .get("/", (req, res) => {
     console.log("GET");
-    res.status(200).json({ text: "This was GET request" });
+    res.status(200).json({ text: "This was s GET request" });
     //res.end();
   })
   .post("/", (req, res) => {
