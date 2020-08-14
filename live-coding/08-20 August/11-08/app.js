@@ -21,7 +21,7 @@ app
   })
   .post("/", (req, res) => {
     console.log("POST");
-    res.status(200).json({ text: "This was POST request" });
+    res.status(200).json({ text: "This was a POST request" });
   })
   .delete("/", (req, res) => {
     console.log("POST");
