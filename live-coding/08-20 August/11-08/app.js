@@ -25,7 +25,7 @@ app
   })
   .delete("/", (req, res) => {
     console.log("POST");
-    res.status(200).json({ text: "This was DELETE" });
+    res.status(200).json({ text: "This was a DELETE" });
   })
   .put("/", (req, res) => {
     console.log("POST");
