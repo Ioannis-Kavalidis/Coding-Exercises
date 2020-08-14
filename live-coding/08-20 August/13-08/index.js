@@ -38,7 +38,7 @@
 //   add: 'Berlin',
 //   hobbies: ['dance', 'sleep'],
 //   emails: {
-//     private: 'me@mail.co',
+//     private: 'makeup@mail.co',
 //     work: 'you@mail.com'
 //   },
 //   date: Date()
