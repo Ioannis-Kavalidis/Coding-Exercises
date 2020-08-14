@@ -29,7 +29,7 @@ app
   })
   .put("/", (req, res) => {
     console.log("POST");
-    res.status(200).json({ text: "This was PUT" });
+    res.status(200).json({ text: "This was a PUT" });
   });
 
 // app.use((req, res, next) => {
