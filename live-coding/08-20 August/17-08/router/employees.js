@@ -28,7 +28,7 @@ router.post("/", async (req, res) => {
     });
   }
 });
-// GET  http://localhost:3000/employees/ -->  get all employees
+// GET  http://localhost:3000/employees/ -->
 // POST http://localhost:3000/employees/ -->  add employee
 // GET http://localhost:3000/employees/:name -->  get employee by name
 // PATCH http://localhost:3000/employees/:name -->  update employee by name
