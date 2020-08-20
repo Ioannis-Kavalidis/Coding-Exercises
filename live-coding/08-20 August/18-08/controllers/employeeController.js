@@ -1,4 +1,5 @@
 const EmployeesData = require("../model/employeesModel");
+const e = require("express");
 
 // Middleware
 const getEmployee = async (req, res, next) => {
@@ -44,9 +45,25 @@ const getAdd = async (req, res, next) => {
 // View all Employees
 const getAllEmployee = async (req, res) => {
   try {
+    // const employees = await EmployeesData.find().select("name age");
+
     const employees = await EmployeesData.find();
     // 200 for Successful Ok
-    res.status(200).json(employees);
+    // console.log(employees);
+    res.status(200).json(
+      employees.map((employee) => {
+        return {
+          employeeId: employee._id,
+          employeeName: employee.name,
+          age: employee.age,
+          employeeAddedDate: employee.employeeAddedDate,
+          request: {
+            type: "GET",
+            url: `http://localhost:3000/employees/${employee.name}`,
+          },
+        };
+      })
+    );
   } catch (err) {
     // 500 Internal server error
     res.status(500).json({ message: err.message });
@@ -117,13 +134,16 @@ const deleteOneEmployee = async (req, res) => {
 const updateAllEmployeeData = async (req, res) => {
   try {
     // update
-    await EmployeesData.update(
+    await EmployeesData.updateOne(
       { name: req.params.name },
       {
         $set: {
           name: req.body.name,
           age: req.body.age,
           add: req.body.add,
+        },
+        $currentDate: {
+          employeeAddedDate: Date.now,
         },
       }
     );
@@ -141,7 +161,9 @@ const updateManyEmployees = async (req, res) => {
     await EmployeesData.updateMany(
       { add: req.params.add },
       {
-        $set: { add: req.body.add },
+        $set: {
+          add: req.body.add,
+        },
       }
     );
     // 200 for Successful OK
