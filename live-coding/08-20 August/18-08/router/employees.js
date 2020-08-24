@@ -26,7 +26,7 @@ router
 // POST http://localhost:3000/employees/ -->  add employee
 // GET http://localhost:3000/employees/:name -->  get employee by name
 // PATCH http://localhost:3000/employees/:name -->  update employee by name
-// UPDATE aka PUT http://localhost:3000/employees/:name --> update employee by name
+// UPDATE aka PUT http://localhost:3000/employees/:name -->
 // DELETE http://localhost:3000/employees/:name --> delete employee by name
 
 // Get many employees by address
