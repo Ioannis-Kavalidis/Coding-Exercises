@@ -34,6 +34,5 @@ router.get("/search/:add", getAdd, (req, res) => {
   res.status(200).json(res.employee);
 });
 // Update many employees by address
-router.put("/update/:add", getAdd, updateManyEmployees);
 
 module.exports = router;
